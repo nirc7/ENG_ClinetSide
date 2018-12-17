@@ -1,0 +1,43 @@
+<body bgcolor=#dddddd><a name="top"></a>
+<CENTER><h1>HTML TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 43  -->
+<font color=blue>
+<h3>47. Form input - textarea:</h3></font><hr>
+<h3>
+<CENTER><TEXTAREA name=ex47 rows=10 wrap=hard cols=60>
+&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;center&gt;
+
+&lt;form&gt;Add some html text inside this text area:&lt;br&gt;
+&lt;textarea name="ta" cols=30 rows=10&gt;
+      &lt;html&gt;
+      &lt;/html&gt;
+&lt;/textarea&gt;&lt;br&gt;
+&lt;input type="button" value="Execute HTML" onclick="document.write(ta.value)"&gt;
+&lt;/form&gt;
+&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;
+</TEXTAREA></CENTER></h3>
+<hr>
+<center>
+<FORM>
+<input type=button onClick="document.write(ex47.value)" value="Run">
+<input type=button onClick="location='ex46.html'" value="Prev">
+</form>
+</center>
+
+ 
+ <h4>Textarea has following attributes:
+<ul>
+  <li><b><font color="#FF0000">cols</font></b> - width of the area - number of columns</li>
+  <li><b><font color="#FF0000">rows </font></b>- height of the area - number of rows</li>
+  <li><b><font color="#FF0000">name</font></b> - the name of the area.  </li>
+  </ul>
+  Text written inside textarea can be retrieved using name.value attribute.</h4> 
+<b><font color="#FF0000">document.write(string) </font></b> 
+<br>- is a function that writes string text into the display of an HTML page.&nbsp; </h4>Button event handler :  <br>
+<i><font color="#FF0000">onclick=document.write(ta.value) </font></i>   <br>
+takes value of the textarea named <i>&quot;ta&quot; </i>and executes it (writes its 
+  code to the page&quot;).</h4>

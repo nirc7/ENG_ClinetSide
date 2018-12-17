@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab2/ex26.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd><A name=top></A>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 26  --><FONT color=blue>
+<H3>26. Hyperlink to local file:</H3>
+<CENTER><TEXTAREA name=ex26 rows=30 wrap=hard cols=80>&lt;html&gt;&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;
+&lt;a href="ex25.html"&gt;back&lt;/a&gt;
+&lt;/center&gt;&lt;/body&gt;&lt;/html&gt;</TEXTAREA> 
+<FORM><INPUT onclick=document.write(ex26.value) type=button value=Run> <INPUT onclick="location='ex27.html'" type=button value=Next> <INPUT onclick="location='ex25.html'" type=button value=Prev> 
+</FORM></CENTER></FONT></FONT><!-- End of Example 25 -->
+<H4><FONT color=purple>Hypermedia's most outstanding ability is the 
+<BIG>link</BIG>. Linking is the possibility to jump from a place in a document 
+to another "linked" place by simple click of the mouse.<BR><BR>Linking is of two 
+kinds: 
+<UL>
+  <LI>to the same document - to an "anchor" in the document 
+  <LI>to another document - making the browser to load it </LI></UL>The linking is 
+implemented using anchors (<FONT color=#ff0000>&lt;a&gt;</FONT> elements). The 
+anchor&nbsp; syntax is very simple: 
+<OL>
+  <LI><FONT color=#ff0000>&lt;a</FONT> followed by space
+  <LI><FONT color=#ff0000>href="filename"</FONT> followed by<FONT color=#ff0000> 
+  &gt; </FONT>(stands for <SPAN 
+  style="FONT-WEIGHT: 400; FONT-STYLE: italic">h</SPAN>yper <SPAN 
+  style="FONT-WEIGHT: 400"><I>ref</I></SPAN>erence) 
+  <LI><FONT color=#ff0000>text</FONT> or image to become a link 
+  <LI><FONT color=#ff0000>&lt;/a&gt;</FONT> closing anchor tag</LI></OL>
+<CENTER>&lt;a href="filename"&gt;link text&lt;/a&gt; </CENTER>
+<H4>When the jump is to local file in <I><U>the same folder,</U></I> directory 
+then you just write the file name:<FONT color=red> &lt;a 
+href="ex21.html"&gt;text&lt;/a&gt;</FONT><BR>When the file is <I><U>in a 
+sub-folder</U></I> of the current folder: <FONT color=#ff0000>&nbsp; &lt;a 
+href="subfolder/filename"&gt;text&lt;/a&gt;</FONT><BR>When the file is i<I><U>n 
+a parent folder</U></I> of the current folder:<FONT color=#ff0000>&nbsp; &lt;a 
+href="../filename"&gt;text&lt;/a&gt;</FONT></H4>
+<CENTER></CENTER></FONT></H4></BODY></HTML>

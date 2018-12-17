@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab3/ex34.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 33  --><FONT color=blue>
+<H3>34. Event handlers - Click:</H3>
+<CENTER><TEXTAREA name=ex34 rows=23 wrap=hard cols=80>&lt;html&gt;
+   &lt;head&gt;&lt;/head&gt;
+   &lt;body ondblClick="location='http://www.walla.co.il'"&gt;&lt;center&gt;
+      &lt;p&gt;
+         &lt;h3&gt;Double Click event&lt;/h3&gt;
+         Please double click the mouse anywhere in the window to
+         go to www.walla.co.il
+      &lt;/p&gt;
+      &lt;br&gt;&lt;br&gt;
+      &lt;h3&gt;Click event&lt;/h3&gt;
+      &lt;p onCLick="window.location='http://www.nana.co.il'"&gt;
+	     Please click the mouse over this text to go to www.nana.co.il
+	  &lt;/p&gt;
+	  &lt;br&gt;&lt;br&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(ex34.value) type=button value=Run> <INPUT onclick="location='ex35.html'" type=button value=Next> <INPUT onclick="location='ex33.html'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple><FONT color=purple>
+<P>Events syntax: <FONT color=#ff0000>&lt;tag Event="EventHandler action 
+value"&gt;</FONT> 
+<P>In <B>current example we used <FONT color=#ff0000>onclick </FONT>event and 
+even handler </B>action <FONT color=#ff0000>window.location='new 
+page'</FONT>:<BR>&nbsp;&lt;body 
+onClick="window.location='yex30.html'"&gt;<BR>where <I>window.location</I> 
+changes current page to the page mentioned in location value.</P><I><FONT 
+color=#ff0000>Mouse events </FONT></I>are: 
+<TABLE width=620 border=1>
+  <TBODY>
+  <TR>
+    <TH vAlign=top align=left width=150>Event</TH>
+    <TH vAlign=top align=left width=109>Event Handler</TH>
+    <TH vAlign=top align=left width=339>Description</TH></TR>
+  <TR>
+    <TD vAlign=top width=150><B>onclick</B></TD>
+    <TD vAlign=top width=109><I>script</I>&nbsp;</TD>
+    <TD vAlign=top width=339>What to do on a mouse click</TD></TR>
+  <TR>
+    <TD vAlign=top width=150><B>ondblclick</B></TD>
+    <TD vAlign=top width=109><I>script</I>&nbsp;</TD>
+    <TD vAlign=top width=339>What to do on a mouse double-click</TD></TR>
+  <TR>
+    <TD vAlign=top width=150><B>onmousedown</B></TD>
+    <TD vAlign=top width=109><I>script</I>&nbsp;</TD>
+    <TD vAlign=top width=339>What to do when mouse button is pressed</TD></TR>
+  <TR>
+    <TD vAlign=top width=150><B>onmousemove</B></TD>
+    <TD vAlign=top width=109><I>script</I>&nbsp;</TD>
+    <TD vAlign=top width=339>What to do when mouse pointer moves</TD></TR>
+  <TR>
+    <TD vAlign=top width=150><B>onmouseout</B></TD>
+    <TD vAlign=top width=109><I>script</I></TD>
+    <TD vAlign=top width=339>What to do when mouse pointer moves out of an 
+      element</TD></TR>
+  <TR>
+    <TD vAlign=top width=150><B>onmouseover</B></TD>
+    <TD vAlign=top width=109><I>script</I></TD>
+    <TD vAlign=top width=339>What to do when mouse pointer moves over an 
+      element</TD></TR>
+  <TR>
+    <TD vAlign=top width=150><B>onmouseup</B></TD>
+    <TD vAlign=top width=109><I>script</I>&nbsp;</TD>
+    <TD vAlign=top width=339>What to do when mouse button is 
+  released</TD></TR></TBODY></TABLE></FONT></FONT></FONT></H4><!-- End of Example 23 --></BODY></HTML>

@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab3/ex44.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 43  --><FONT color=blue>
+<H3>44. Form - select list and onChange event</H3>
+<CENTER><TEXTAREA name=ex44 rows=22 wrap=hard cols=90>&lt;html&gt;
+   &lt;head&gt;&lt;/head&gt;
+   &lt;body&gt;
+      &lt;center&gt;
+      &lt;h3&gt;Form Select List Example&lt;/h3&gt;
+      &lt;form&gt; 
+       &lt;select name="s" onChange="document.bgColor=s.options[s.selectedIndex].value"&gt;
+         &lt;option value='RED'&gt;red
+         &lt;option value='WHITE' selected&gt;white
+         &lt;option value='BLACK'&gt;black
+         &lt;option value='GREEN'&gt;green
+         &lt;option value='BLUE'&gt;blue
+       &lt;/select&gt;
+      &lt;/form&gt; 
+      &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(ex44.value) type=button value=Run> <INPUT onclick="location='ex45.html'" type=button value=Next> <INPUT onclick="location='ex43.html'" type=button value=Prev> 
+</FORM></FONT></CENTER>
+<H4><FONT color=purple>Form select list uses &lt;select&gt; tag with inner 
+&lt;option&gt; tags. One of the options has to be selected. <BR>Text written 
+after <OPTION>tag is actually the text user sees as a select option.<BR><FONT 
+color=#ff0000>&lt;select&gt;<BR>&lt;option value='RED'&gt;red<BR>&lt;option 
+value='WHITE' selected&gt;white<BR>&lt;/select&gt;<BR></FONT>
+<P>In current event handler we use the following action:<BR><FONT 
+color=#ff0000>onChange="document.bgColor=s.options[s.selectedIndex].value"</FONT>
+<P>Selected list item is -&nbsp; <I>s.options[s.selectedIndex]</I>. </FONT><!-- End of Example 23 --></P></H4></BODY></HTML>

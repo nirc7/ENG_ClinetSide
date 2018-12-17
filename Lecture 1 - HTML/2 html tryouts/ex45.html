@@ -1,0 +1,77 @@
+<body bgcolor=#dddddd>
+<CENTER><h1>HTML TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 45  -->
+<font color=blue>
+<h3>45. Frames:</h3>
+<center> 
+
+<textarea name="ex45" wrap=hard cols=80 rows=20>
+<FRAMESET COLS="25%,75%">
+
+	<FRAME SRC="ex45c.html" NAME="3" scrolling=yes>
+
+	<FRAMESET ROWS="60%,40%">
+		<FRAME SRC="ex45a.html" NAME="1">
+		<FRAME SRC="ex45b.html" NAME="2">
+	</FRAMESET>
+
+</FRAMESET> 
+</textarea>
+
+
+<FORM>
+<input type=button onClick="document.write(ex45.value)" value="Run">
+<input type=button onClick="location='ex46.html'" value="Next">
+<input type=button onClick="location='ex44.html'" value="Prev">
+
+</form>
+</center><font color=purple>
+<center><h3>FRAMES - Multi-Document Windows</h3></center><h4>
+Instead of one document in the window, we can divide the window into parts. Each part is a FRAME. In each frame a different document can be loaded. The set of frames is called a FRAMESET.<br><br>
+FRAMESETs can be nested, i.e. one FRAMESET can include another. One FRAMESET draws a straight line (either vertical or horizontal) and thus divides the window into two. Combining a set of FRAMESETs and FRAMEs, we can divide and sub-divide as we wish.<br><br>
+
+Vertical division is achieved using the COLS attribute in the FRAMESET tag.<br>
+Horizontal division is achieved using the ROWS attribute in the FRAMESET tag.
+<xmp>
+Examples:
+
+1. to divide vertically into two:
+
+   <FRAMESET COLS="15%,85%">
+      <FRAME>
+      <FRAME>
+   </FRAMESET> 
+
+2. to divide vertically into three:
+
+   <FRAMESET COLS="15%,35%,50%">
+      <FRAME>
+      <FRAME>
+      <FRAME>
+   </FRAMESET> 
+
+3. to sub-divide the first FRAME of the previous example horizontally -
+   define it as a FRAMESET: 
+</xmp>
+
+	</font></font>
+
+	<FRAMESET COLS="15%,35%,50%">
+		<FRAMESET ROWS="40%,60%">
+			<FRAME>
+			<FRAME>
+		</FRAMESET> 
+		<FRAME>
+		<FRAME>
+	</FRAMESET> 
+</h4>
+<h4>
+
+Scrolling can be set to yes | no | auto , the default is auto.</h4>
+<h4>
+You can use the NORESIZE tag to disable the resizing of the frame.</h4>
+ <!-- End of Example 43 -->

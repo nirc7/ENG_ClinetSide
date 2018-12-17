@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab3/ex33.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 32  --><FONT color=blue>
+<H3>33. Event handlers - DoubleClick:</H3>
+<CENTER><TEXTAREA name=ex33 rows=15 wrap=hard cols=80>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body ondblClick="location='ex32.html'"&gt;&lt;center&gt;
+		&lt;p&gt;&lt;h3&gt;Double Click event&lt;/h3&gt;
+			Please double click the mouse anywhere in the
+			window to go to ex32.html page
+		&lt;/p&gt;&lt;br&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(ex33.value) type=button value=Run> <INPUT onclick="location='ex34.html'" type=button value=Next> <INPUT onclick="location='ex32.html'" type=button value=Prev> 
+</FORM></CENTER><FONT color=purple><A name=1009362>
+<P></A>
+<CENTER>
+<H2><A name=1009710>Handling Events</H2></A></CENTER><A name=1009771>HTML 
+applications should be largely event-driven.<BR><I>Events</I> are actions that 
+occur usually as a result of something the user does. For example, clicking a 
+button is an event, as is changing a text field or moving the mouse over a link. 
+For your script to react to an event, you define <I>event handlers</I>, such as 
+<CODE>onChange</CODE> and <CODE>onClick</CODE>.
+<P></A><A name=1009994></A>
+<P><B><A name=1010636>Table &nbsp;Navigator event handlers &nbsp;</A></B> 
+<TABLE border=2>
+  <TBODY>
+  <TR>
+    <TH vAlign=baseline align=left><B><A name=1010644><B>Event </B></A></B>
+    <TH vAlign=baseline align=left><B><A name=1010646><B>Applies to 
+      </B></A></B>
+    <TH vAlign=baseline align=left><B><A name=1010648><B>Occurs when 
+      </B></A></B>
+    <TH vAlign=baseline align=left><B><A name=1010650><B>Event handler 
+      </B></A></B>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010652><PRE>Abort</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010654>images</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010656>User aborts the loading of 
+      an image (for example by clicking a link or clicking the Stop button)</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010658><PRE>onAbort</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010660><PRE>Blur</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010662>windows and all form 
+      elements</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010664>User removes input focus 
+      from window or form element</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010666><PRE>onBlur</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010668><PRE>Change</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010670>text fields, textareas, 
+      select lists</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010672>User changes value of 
+      element</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010674><PRE>onChange</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010676><PRE>Click</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010678>buttons, radio buttons, 
+      checkboxes, submit buttons, reset buttons, links</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010680>User clicks form element or 
+      link</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010682><PRE>onClick</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010684><PRE>DragDrop</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010686>windows</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010688>User drops an object onto 
+      the browser window, such as dropping a file on the browser window</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010690><PRE>onDragDrop</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010692><PRE>Error</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010694>images, windows</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010696>The loading of a document 
+      or image causes an error</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010698><PRE>onError</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010700><PRE>Focus</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010702>windows and all form 
+      elements</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010704>User gives input focus to 
+      window or form element</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010706><PRE>onFocus</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010708><PRE>KeyDown</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010710>documents, images, links, 
+      text areas</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010712>User depresses a key</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010714><PRE>onKeyDown</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010716><PRE>KeyPress</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010718>documents, images, links, 
+      text areas</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010720>User presses or holds down 
+      a key</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010722><PRE>onKeyPress</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010724><PRE>KeyUp</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010726>documents, images, links, 
+      text areas</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010728>User releases a key</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010730><PRE>onKeyUp</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010732><PRE>Load</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010734>document body</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010736>User loads the page in the 
+      Navigator</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010738><PRE>onLoad</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010740><PRE>MouseDown</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010742>documents, buttons, 
+      links</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010744>User depresses a mouse 
+      button</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010746><PRE>onMouseDown</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010748><PRE>MouseMove</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010750>nothing by default</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010752>User moves the cursor</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010754><PRE>onMouseMove</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010756><PRE>MouseOut</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010758>areas, links</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010760>User moves cursor out of a 
+      client-side image map or link</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010762><PRE>onMouseOut</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010764><PRE>MouseOver</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010766>links</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010768>User moves cursor over a 
+      link</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010770><PRE>onMouseOver</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010772><PRE>MouseUp</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010774>documents, buttons, 
+      links</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010776>User releases a mouse 
+      button</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010778><PRE>onMouseUp</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010780><PRE>Move</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010782>windows</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010784>User or script moves a 
+      window </A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010786><PRE>onMove</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010788><PRE>Reset</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010790>forms</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010792>User resets a form (clicks 
+      a Reset button)</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010794><PRE>onReset</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010796><PRE>Resize</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010798>windows</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010800>User or script resizes a 
+      window</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010802><PRE>onResize</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010804><PRE>Select</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010806>text fields, textareas</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010808>User selects form element's 
+      input field</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010810><PRE>onSelect</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010812><PRE>Submit</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010814>forms</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010816>User submits a form</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010818><PRE>onSubmit</PRE></A>
+  <TR>
+    <TD vAlign=baseline align=left><A name=1010820><PRE>Unload</PRE></A>
+    <TD vAlign=baseline align=left><A name=1010822>document body</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010824>User exits the page</A>
+      <P></P>
+    <TD vAlign=baseline align=left><A name=1010826><PRE>onUnload</PRE></A></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD></TR></TBODY></TABLE>
+<P></A></FONT></FONT><!-- End of Example 23 --></P></BODY></HTML>

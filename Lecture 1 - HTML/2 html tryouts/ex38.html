@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab3/ex38.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 32  --><FONT color=blue>
+<H3>38. Form - input</H3>
+<CENTER><TEXTAREA name=ex38 rows=20 wrap=hard cols=80>&lt;html&gt;
+   &lt;head&gt;&lt;/head&gt;
+   &lt;body&gt;
+      &lt;center&gt;
+      &lt;h3&gt;Form Input examples&lt;/h3&gt;
+      &lt;form&gt;My favorite text color:
+         &lt;input type="text" value="blue" name="i"&gt;&lt;br&gt;
+           Your favorite background color:
+         &lt;input type="text" name="bgc" 
+                onChange="document.bgColor=bgc.value;document.fgColor=i.value"&gt;
+      &lt;/form&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(ex38.value) type=button value=Run> <INPUT onclick="location='ex39.html'" type=button value=Next> <INPUT onclick="location='ex37.html'" type=button value=Prev> 
+</FORM></FONT></CENTER>
+<H4><FONT color=purple>Form input type="text" has several attributes: 
+<UL>
+  <LI>value - string written inside text box, initial value of the input field 
+  <LI>size - the length of the input field, if the user enters more characters, 
+  the text will scroll 
+  <LI>name - user defined name of the current form element </LI></UL>Main 
+<U><I>name</I></U> usage - event handling.&nbsp;<BR>In current example we used 
+name attribute to refer to concrete input box and &nbsp;to define new foreground 
+and background colors.<BR><I><FONT color=#ff0000>&lt;input type="text" 
+value="blue" </FONT><FONT color=#0000ff>name="i"</FONT><FONT 
+color=#ff0000>&gt;&lt;br&gt;<BR>&lt;input type="text" </FONT><FONT 
+color=#0000ff>name="bgc"</FONT> <FONT 
+color=#ff0000>onChange="document.bgColor=</FONT><FONT 
+color=#0000ff>bgc.value</FONT> <FONT color=#ff0000>; 
+document.fgColor=</FONT><FONT color=#0000ff>i.value</FONT><FONT 
+color=#ff0000>"&gt;</FONT></I><BR>where onChange is event to be run when the 
+element changes.
+<P></P>
+<P>If you want to perform several actions on some event you write action after 
+action with<FONT color=#0000ff> ;</FONT> as separation mark.<BR><I><FONT 
+color=#ff0000>onChange="document.bgColor=bgc.value </FONT><FONT color=#0000ff>; 
+</FONT><FONT color=#ff0000>document.fgColor=i.value"</FONT></I></FONT><!-- End of Example 23 --></P></H4></BODY></HTML>

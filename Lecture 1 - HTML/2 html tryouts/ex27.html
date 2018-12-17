@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab2/ex27.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd><A name=top></A>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 27  --><FONT color=blue>
+<H3>27. Hypermedia:</H3>
+<CENTER><TEXTAREA name=ex26 rows=30 wrap=hard cols=80>&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;center&gt;
+&lt;A href="ex26.html"&gt;  &lt;img src="back.gif"&gt;&lt;/A&gt;
+&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;center&gt;
+
+&lt;a href="ex28.html"&gt;next&lt;/a&gt;  &lt;/center&gt;&lt;br&gt;&lt;br&gt;&lt;center&gt;
+
+&lt;a href="http://www.altavista.com"&gt; Global link to AltaVista &lt;/a&gt;
+&lt;/center&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(ex26.value) type=button value=Run> <INPUT onclick="location='ex28.html'" type=button value=Next> <INPUT onclick="location='ex26.html'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>Hypermedias most outstanding ability is the 
+<BIG>link</BIG>. Linking is the possibility to jump from a place in a document 
+to another "linked" place by simple click of the mouse.<BR><BR>Linking is of two 
+kinds: 
+<UL>
+  <LI>to <U>the same document</U> - to an "anchor" in the document 
+  <LI>to <U>another document</U> - making the browser to load it </LI></UL><A 
+name=a1></A>The linking is implemented using anchors (&lt;a&gt; elements). The 
+anchor syntax is very simple: 
+<OL>
+  <LI>&lt;a followed by space 
+  <LI>href="filename" followed by &gt; (stands for hyper reference) 
+  <LI>text or image to become a link 
+  <LI>&lt;/a&gt; closing anchor tag </LI></OL><FONT color=red>&lt;a 
+href="filename"&gt;link text&lt;/a&gt; </FONT>
+<P>When the jump is to local file in <U>the same folder</U>, directory then you 
+just write the file name: <FONT color=red>&lt;a 
+href="ex21.html"&gt;text&lt;/a&gt;</FONT> <BR>When the file is in <U>a 
+sub-folder of the current folder</U>: <FONT color=red>&lt;a 
+href="subfolder/filename"&gt;text&lt;/a&gt;</FONT> <BR>When the file is in <U>a 
+parent folder of the current folder</U>: <FONT color=red>&lt;a 
+href="../filename"&gt;text&lt;/a&gt;</FONT> 
+<P>
+<H3>Local link <U>the same document</U> </H3>The anchor at the start of the jump 
+is implemented using: <BR>
+<CENTER>&lt;a href="#where to jump"&gt;.</CENTER><BR>When a special place in a 
+document is the target, the anchor at the target of the jump is implemented 
+using: <BR>
+<CENTER>&lt;a name="where to jump"&gt; ... &lt;a&gt;.</CENTER><BR>
+<P><FONT color=black>Example of an anchor:</FONT><BR>
+<CENTER><A 
+href="ex27.html#top">Go to 
+Top</A></CENTER><BR><A name=named></A>Code of this anchor:
+<OL>
+  <LI>At the top of this document an anchor was created using this code: <FONT 
+  color=red>&lt;a name="top"&gt;&lt;/a&gt;</FONT><BR>
+  <LI>At the bottom the link was created using the following code: <FONT 
+  color=red>&lt;a href="#top"&gt;Go to Top&lt;/a&gt;</FONT></LI></OL>
+<H3>Local link <U>another document</U> </H3>If the jump is to another document, 
+and no special place in it is indicated, there is no need for the second anchor. 
+The jump will be implemented by just loading the target document (if we wish - a 
+default anchor is implied at the top of the loaded document). <BR><FONT 
+color=black>Example:</FONT> <FONT color=red>&lt;a 
+href="ex21.html"&gt;text&lt;/a&gt;</FONT> 
+<H3>Absolute global addresing</H3>In global link you have to give URL of the 
+file: <FONT color=red>scheme://host.domain/path/ filename</FONT><BR><FONT 
+color=red>&lt;a href="URL"&gt;link text&lt;/a&gt;</FONT> <BR><FONT 
+color=black>Example:</FONT> <BR>
+<CENTER>&lt;a href="http://www.cnn.com"&gt;Go to CNN homepage 
+&lt;/a&gt;</CENTER>
+<CENTER><A href="http://www.cnn.com/">Go to CNN 
+homepage</A></CENTER><BR><BR></H4></FONT></FONT><!-- End of Example 26 --></BODY></HTML>

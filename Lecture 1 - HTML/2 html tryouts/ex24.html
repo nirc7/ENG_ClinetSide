@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab2/ex24.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 24  --><FONT color=blue>
+<H3>24. Tables enhanced:</H3>
+<CENTER><TEXTAREA name=yex24 rows=30 wrap=hard cols=80>&lt;html&gt;&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;&lt;center&gt;
+
+ &lt;table border=1&gt;   &lt;!-- BEGIN table definition - symmetrical table--&gt;
+   &lt;caption&gt;&lt;font color=blue size=5&gt;HTML TAGS&lt;/caption&gt;     
+   &lt;thead bgcolor=olive &gt;   &lt;!-- BEGIN titles row definition --&gt;
+      &lt;td&gt;&lt;font color=white&gt; &lt;u&gt; TAG    &lt;/u&gt; &lt;/td&gt;  &lt;!-- first column --&gt;
+      &lt;td&gt;&lt;font color=white&gt; &lt;u&gt; USAGE  &lt;/u&gt; &lt;/td&gt;  &lt;!-- second column --&gt;
+      &lt;td&gt;&lt;font color=white&gt; &lt;u&gt; RESULT &lt;/u&gt; &lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/thead&gt;  &lt;!-- END titles row definition --&gt;
+      
+   &lt;tr&gt;  &lt;!-- BEGIN first row definition --&gt;
+      &lt;td align=center&gt; B               &lt;/td&gt;  &lt;!-- first column --&gt;
+      &lt;td&gt; bold text       &lt;/td&gt;  &lt;!-- second column --&gt;
+      &lt;td&gt; &lt;B&gt;bold text&lt;/B&gt;&lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END first row definition --&gt;
+      
+   &lt;tr&gt;  &lt;!-- BEGIN second row definition --&gt;
+      &lt;td align=center&gt; I             &lt;/td&gt;   &lt;!-- first column --&gt;
+      &lt;td&gt; italics       &lt;/td&gt;   &lt;!-- second column --&gt;
+      &lt;td&gt; &lt;I&gt;italics&lt;/I&gt;&lt;/td&gt;   &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END second row definition --&gt;
+
+   &lt;tr&gt;  &lt;!-- BEGIN third row definition --&gt;
+      &lt;td align=center&gt; U               &lt;/td&gt;   &lt;!-- first column --&gt;
+      &lt;td&gt; underline       &lt;/td&gt;   &lt;!-- second column --&gt;
+      &lt;td&gt; &lt;U&gt;underline&lt;/U&gt;&lt;/td&gt;   &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END third row definition --&gt;
+   
+ &lt;/table&gt;  &lt;!-- END table definition --&gt;
+&lt;br&gt;&lt;br&gt;
+ &lt;table border=2&gt;   &lt;!-- BEGIN table definition - tfoot table --&gt;
+   &lt;caption&gt;&lt;font color=blue size=5&gt;Accounts&lt;/caption&gt;     
+   &lt;thead bgcolor=olive &gt;   &lt;!-- BEGIN titles row definition --&gt;      
+    &lt;tr&gt;   &lt;!-- BEGIN header firs row definition --&gt;
+      &lt;td &gt;&lt;font color=white&gt; &lt;u&gt; Expenditure    &lt;/u&gt; &lt;/td&gt;  &lt;!-- first column --&gt;
+      &lt;td align=center&gt;&lt;font color=white&gt; &lt;u&gt; Sum  &lt;/u&gt; &lt;/td&gt;  &lt;!-- second column --&gt;
+      &lt;td align=center&gt;&lt;font color=white&gt; &lt;u&gt; Tax &lt;/u&gt; &lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END first row definition --&gt;
+&lt;/thead&gt;      
+   &lt;tr&gt;  &lt;!-- BEGIN second row definition --&gt;
+      &lt;td align=center&gt;&lt;font color=blue&gt;Personal&lt;/td&gt; &lt;!-- first column --&gt;
+      &lt;td align=center&gt; 100       &lt;/td&gt;  &lt;!-- second column --&gt;
+      &lt;td align=center&gt; 17&lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END second row definition --&gt;
+      
+   &lt;tr&gt;  &lt;!-- BEGIN third row definition --&gt;
+      &lt;td align=center&gt;&lt;font color=blue&gt;Business&lt;/td&gt;&lt;!-- first column --&gt;
+      &lt;td align=center&gt; 200      &lt;/td&gt;   &lt;!-- second column --&gt;
+      &lt;td align=center&gt; 34&lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END third row definition --&gt;
+
+   &lt;tr&gt;  &lt;!-- BEGIN fourth row definition --&gt;
+      &lt;td align=center&gt;&lt;font color=blue&gt;Academic&lt;/td&gt;&lt;!-- first column --&gt;
+      &lt;td align=center&gt; 300      &lt;/td&gt;   &lt;!-- second column --&gt;
+      &lt;td align=center&gt; 51&lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END fourth row definition --&gt;
+   &lt;tfoot&gt;
+     &lt;tr&gt;  &lt;!-- BEGIN fourth row definition --&gt;
+      &lt;td align=center&gt;&lt;font color=red&gt; Total&lt;/td&gt;   &lt;!-- first column --&gt;
+      &lt;td align=center&gt;&lt;font color=red&gt; 600&lt;/td&gt; &lt;!-- second column --&gt;
+      &lt;td align=center&gt;&lt;font color=red&gt;  102&lt;/td&gt;  &lt;!-- third column --&gt;
+   &lt;/tr&gt;  &lt;!-- END fourth row definition --&gt;
+   &lt;/tfoot&gt;
+ &lt;/table&gt;  &lt;!-- END table definition --&gt;
+
+
+&lt;/body&gt;&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(yex24.value) type=button value=Run> <INPUT onclick="location='ex25.html'" type=button value=Next> <INPUT onclick="location='ex23.html'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<DL>
+  <DT><FONT color=red>caption</FONT> - 
+  <DD>the BEGIN and END tag of the caption of the table 
+  <DT><FONT color=red>thead</FONT> - 
+  <DD>the BEGIN and END tag of the header of the table 
+  <DT><FONT color=red>tfoot</FONT> - 
+  <DD>the BEGIN and END tag of the footer of the table 
+</DD></DL></FONT></FONT></H4><!-- End of Example 24 --></BODY></HTML>

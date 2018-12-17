@@ -1,0 +1,3 @@
+use IE (not chrome) to be able to run the demos
+
+start with ex1.html

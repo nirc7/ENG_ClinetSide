@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1..ac.il/usersftp/cs/eran/html/lab1/ex17.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>HTML TUTORIAL<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></H1></CENTER><!--  Example 17  --><FONT color=blue>
+<H3>17. User Defined RGB Colors:</H3>
+<CENTER><TEXTAREA name=yex17 rows=10 wrap=hard cols=60>&lt;html&gt;&lt;head&gt;&lt;/head&gt;
+
+&lt;body bgcolor=#BBBBBB text=#00FF00&gt;
+&lt;h2&gt;&lt;center&gt;RGB - RED-GREEN-BLUE color scheme&lt;/center&gt;&lt;h3&gt;
+
+bgcolor=#BBBBBB (Background is gray: all colors a little less than max).&lt;br&gt;
+text=#00FF00 (Text color is green: green=max(FF); other colors=0).&lt;br&gt;&lt;br&gt;
+
+&lt;/body&gt;&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(yex17.value) type=button value=Run> <INPUT onclick="location='ex18.html'" type=button value=Next> <INPUT onclick="location='ex16.html'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>You can use bgcolor attribute of body tag if you want to 
+change the back ground color your page. You have to specify the value you give 
+to the attribute:<BR><FONT color=red>&lt;body color="red"&gt;</FONT> 
+<P>Some color names are predefined: 
+<CENTER><A 
+href="colors.html">Predefined 
+Color Names</A><BR></CENTER>
+<P>Some colors use RGB scheme. RGB stands for RED-GREEN-BLUE color scheme. All 
+colors can be synthesized from a composition of those three basic colors. The 
+proportions of each basic color decide the resulting color.<BR>Hexadecimal 
+system basis is 16 and not 10 as in usual decimal system. So we need more 
+digits, to signify 10,11,12,13,14 and 15. Those are represented by the first 
+letters of the latin alphabet: A, B, C, D, E, F. 
+<TABLE align=center border=1>
+  <CAPTION><FONT color=#0000ff>Hex Digits</FONT></CAPTION>
+  <THEAD align=middle>
+  <TR>
+    <TD>DEC</TD>
+    <TD>HEX</TD></FONT></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>1</TD>
+    <TD>1</TD></TR>
+  <TR>
+    <TD>2</TD>
+    <TD>2</TD></TR>
+  <TR>
+    <TD>3</TD>
+    <TD>3</TD></TR>
+  <TR>
+    <TD>4</TD>
+    <TD>4</TD></TR>
+  <TR>
+    <TD>5</TD>
+    <TD>5</TD></TR>
+  <TR>
+    <TD>6</TD>
+    <TD>6</TD></TR>
+  <TR>
+    <TD>7</TD>
+    <TD>7</TD></TR>
+  <TR>
+    <TD>8</TD>
+    <TD>8</TD></TR>
+  <TR>
+    <TD>9</TD>
+    <TD>9</TD></TR>
+  <TR>
+    <TD>10</TD>
+    <TD><FONT color=#ff0000>A</FONT></TD></TR>
+  <TR>
+    <TD>11</TD>
+    <TD><FONT color=#ff0000>B</FONT></TD></TR>
+  <TR>
+    <TD>12</TD>
+    <TD><FONT color=#ff0000>C</FONT></TD></TR>
+  <TR>
+    <TD>13</TD>
+    <TD><FONT color=#ff0000>D</FONT></TD></TR>
+  <TR>
+    <TD>14</TD>
+    <TD><FONT color=#ff0000>E</FONT></TD></TR>
+  <TR>
+    <TD>15</TD>
+    <TD><FONT color=#ff0000>F</FONT></TD></TR></TBODY></TABLE><BR>
+<TABLE align=center border=1>
+  <CAPTION><FONT color=#0000ff>Two Hex Digits Transition Table</FONT></CAPTION>
+  <THEAD align=middle>
+  <TR>
+    <TD>DEC</TD>
+    <TD>HEX</TD></FONT></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TD>00</TD>
+    <TD>0*16 + 0 = 0</TD></TR>
+  <TR>
+    <TD>01</TD>
+    <TD>0*16 + 1 = 1</TD></TR>
+  <TR>
+    <TD>0A</TD>
+    <TD>0*16 + 10 = 10</TD></TR>
+  <TR>
+    <TD>0f</TD>
+    <TD>0*16 + 15 = 15</TD></TR>
+  <TR>
+    <TD>10</TD>
+    <TD>1*16 + 0 = 16</TD></TR>
+  <TR>
+    <TD>A0</TD>
+    <TD>10*16 + 0 = 160</TD></TR>
+  <TR>
+    <TD>A1</TD>
+    <TD>10*16 + 1 = 161</TD></TR>
+  <TR>
+    <TD>AA</TD>
+    <TD>10*16 + 10 = 170</TD></TR>
+  <TR>
+    <TD>FF</TD>
+    <TD>15*16 + 15 = 255</TD></TR></TBODY></TABLE><BR></FONT><FONT color=purple>The 
+RED-GREEN-BLUE color scheme uses 6 hex digits encoding for a color: 
+<UL>
+  <LI>RED - first two ranging : 00 - FF 
+  <LI>GREEN - second two ranging: 00 - FF 
+  <LI>BLUE - third two ranging : 00 - FF </LI></UL><BR><TD><!-- start content table -->
+<CENTER>
+<TABLE width=500 border=0>
+  <TBODY>
+  <TR>
+    <TD colSpan=2>
+      <HR noShade>
+
+      <CENTER><B><FONT size=+1>Using Hexadecimal Color Codes</FONT></B> 
+      <P>For Page Backgrounds: <TT>&lt;body bgcolor="#hexdec"&gt;</TT><BR>
+      <HR>
+      There are 16.7 million different colors in the hexadecimal color 
+      system.<BR>#000000 is black, and #FFFFFF is white. 
+      <HR>
+      Each of the 6 digits in the hexadecimal code is broken into 3 seperate 
+      groups... </CENTER>
+      <UL>
+        <LI><TT>#<B>XX</B>xxxx</TT> - Red Color Value 
+        <LI><TT>#xx<B>XX</B>xx</TT> - Green Color Value 
+        <LI><TT>#xxxx<B>XX</B></TT> - Blue Color Value </LI></UL>Each digit is a 
+      value from 0 to F, in the hexadecimal system. The hexadecimal color system 
+      counts by 0 1 2 3 4 5 6 7 8 9 A B C D E F, with 0 being null value, and F 
+      being highest value.<BR><BR>
+      <CENTER>So if the first two digits (red values) are full (FF) and the 
+      other four are null (00) the color will be red. </CENTER>
+  <TR>
+    <TD><FONT color=#ff0000>#FF0000 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#ff0000><FONT color=#000000>Background #FF0000</FONT> 
+  <TR>
+    <TD colSpan=2>
+      <CENTER>If the first two are null (00), the third and fourth digit (green 
+      value) are full (FF), and the fifth and sixth digit are null (00), the 
+      color will be green. </CENTER>
+  <TR>
+    <TD><FONT color=#00ff00>#00FF00 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#00ff00><FONT color=#000000>Background #00FF00</FONT> 
+  <TR>
+    <TD colSpan=2>
+      <CENTER>If the first four digits are null (00), and the fifth and sixth 
+      digit (blue value) are full (FF), the color will be blue. </CENTER>
+  <TR>
+    <TD><FONT color=#0000ff>#0000FF - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#0000ff><FONT color=#000000>Background #0000FF</FONT> 
+  <TR>
+    <TD colSpan=2>
+      <CENTER>Here is an example of the different shades of colors between black 
+      and white. </CENTER>
+  <TR>
+    <TD><FONT color=#000000>#000000 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#000000><FONT color=#ffffff>Background #000000</FONT> 
+  <TR>
+    <TD><FONT color=#111111>#111111 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#111111><FONT color=#ffffff>Background #111111</FONT> 
+  <TR>
+    <TD><FONT color=#222222>#222222 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#222222><FONT color=#ffffff>Background #222222</FONT> 
+  <TR>
+    <TD><FONT color=#333333>#333333 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#333333><FONT color=#ffffff>Background #333333</FONT> 
+  <TR>
+    <TD><FONT color=#444444>#444444 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#444444><FONT color=#ffffff>Background #444444</FONT> 
+  <TR>
+    <TD><FONT color=#555555>#555555 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#555555><FONT color=#ffffff>Background #555555</FONT> 
+  <TR>
+    <TD><FONT color=#666666>#666666 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#666666><FONT color=#ffffff>Background #666666</FONT> 
+  <TR>
+    <TD><FONT color=#777777>#777777 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#777777><FONT color=#ffffff>Background #777777</FONT> 
+  <TR>
+    <TD><FONT color=#888888>#888888 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#888888><FONT color=#ffffff>Background #888888</FONT> 
+  <TR>
+    <TD><FONT color=#999999>#999999 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#999999><FONT color=#ffffff>Background #999999</FONT> 
+  <TR>
+    <TD><FONT color=#aaaaaa>#AAAAAA - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#aaaaaa><FONT color=#000000>Background #AAAAAA</FONT> 
+  <TR>
+    <TD><FONT color=#bbbbbb>#BBBBBB - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#bbbbbb><FONT color=#000000>Background #BBBBBB</FONT> 
+  <TR>
+    <TD><FONT color=#cccccc>#CCCCCC - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#cccccc><FONT color=#000000>Background #CCCCCC</FONT> 
+  <TR>
+    <TD><FONT color=#dddddd>#DDDDDD - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#dddddd><FONT color=#000000>Background #DDDDDD</FONT> 
+  <TR>
+    <TD><FONT color=#eeeeee>#EEEEEE - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#eeeeee><FONT color=#000000>Background #EEEEEE</FONT> 
+  <TR>
+    <TD><FONT color=#ffffff>#FFFFFF - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#ffffff><FONT color=#000000>Background #FFFFFF</FONT> 
+  <TR>
+    <TD colSpan=2>
+      <CENTER>Here are some examples of mixed colors...</CENTER>
+  <TR>
+    <TD><FONT color=#ffff00>#FFFF00 - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#ffff00><FONT color=#000000>Background #FFFF00</FONT> 
+  <TR>
+    <TD><FONT color=#00ffff>#00FFFF - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#00ffff><FONT color=#000000>Background #00FFFF</FONT> 
+  <TR>
+    <TD><FONT color=#ff00ff>#FF00FF - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#ff00ff><FONT color=#000000>Background #FF00FF</FONT> 
+  <TR>
+    <TD><FONT color=#abcdef>#ABCDEF - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#abcdef><FONT color=#000000>Background #ABCDEF</FONT> 
+  <TR>
+    <TD><FONT color=#fedcba>#FEDCBA - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#fedcba><FONT color=#000000>Background #FEDCBA</FONT> 
+  <TR>
+    <TD><FONT color=#a1f4bb>#A1F4BB - AaBbCcDdEeFf1234567890</FONT> 
+    <TD bgColor=#a1f4bb><FONT color=#000000>Background #A1F4BB</FONT> 
+  <TR>
+    <TD colSpan=2>
+      <H4></H4></FONT></FONT></FONT><!-- End of Example 17 --></TR></TBODY></TABLE></CENTER></FONT></H4></BODY></HTML>

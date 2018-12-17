@@ -1,0 +1,105 @@
+<!-- Color Mixer Example  -->
+<script>
+
+//change background color to str
+function bgcol()
+{
+validate();
+color='#'+f.rb.value+f.gb.value+f.bb.value;
+document.bgColor=color;
+}
+
+//change text (FG - foreground) color to str
+function fgcol(str)
+{
+validate();
+color='#'+f.rf.value+f.gf.value+f.bf.value;
+document.fgColor=color;
+}
+
+//change background color to bg and text color to fg
+function col()
+{
+validate();
+bg='#'+f.rb.value+f.gb.value+f.bb.value;
+fg='#'+f.rf.value+f.gf.value+f.bf.value;
+document.bgColor=bg;
+document.fgColor=fg;
+}
+
+// validate the input in both bg and fg tables.
+// if there are less than 2 digits for each color - they are padded with 0.
+// no check is performed on illegal chars (chars outside 0-9 and A-F) as:
+// they are validated by the browser, which treats them as 0.
+// no check is performed on illegal length larger than 2 as:
+// the size of the input box does not allow more than 2 chars
+
+function validate()
+{
+
+//validate bg
+if(f.rb.value.length==0) f.rb.value='00';
+else if(f.rb.value.length<2) f.rb.value=f.rb.value+'0';
+if(f.gb.value.length==0) f.gb.value='00';
+else if(f.gb.value.length<2) f.gb.value=f.gb.value+'0';
+if(f.bb.value.length==0) f.bb.value='00';
+else if(f.bb.value.length<2) f.bb.value=f.bb.value+'0';
+
+//validate fg
+if(f.rf.value.length==0) f.rf.value='00';
+else if(f.rf.value.length<2) f.rf.value=f.rf.value+'0';
+if(f.gf.value.length==0) f.gf.value='00';
+else if(f.gf.value.length<2) f.gf.value=f.gf.value+'0';
+if(f.bf.value.length==0) f.bf.value='00';
+else if(f.bf.value.length<2) f.bf.value=f.bf.value+'0';
+
+}
+
+</script>
+<body><center><h1>Color Mixer</h1>
+
+
+
+valid values - 00-FF Hex
+
+<form name=f>
+<!-- Background -->
+ <table border=1>
+  <caption>Background</caption>
+  <tr>
+   <td><input type=button value="RED" onClick="bgColor='RED';">
+   <td><input type=text name=rb SIZE=3 MAXLENGTH=2 value="DD">
+  </tr>
+  <tr>
+   <td><input type=button value="GREEN" onClick="bgColor='GREEN';">
+   <td><input type=text name=gb SIZE=3 MAXLENGTH=2 value="DD">
+  </tr>
+  <tr>
+   <td><input type=button value="BLUE" onClick="bgColor='BLUE';">
+   <td><input type=text name=bb SIZE=3 MAXLENGTH=2 value="DD">
+  </tr>
+ </table>
+
+<!-- Text -->
+ <table border=1>
+  <caption>Text</caption>
+  <tr>
+   <td><input type=button value="RED" onClick="fgColor='RED';">
+   <td><input type=text name=rf SIZE=3 MAXLENGTH=2 value="AA">
+  </tr>
+  <tr>
+   <td><input type=button value="GREEN" onClick="fgColor='GREEN';">
+   <td><input type=text name=gf SIZE=3 MAXLENGTH=2 value="AA">
+  </tr>
+  <tr>
+   <td><input type=button value="BLUE" onClick="fgColor='BLUE';">
+   <td><input type=text name=bf SIZE=3 MAXLENGTH=2 value="AA">
+  </tr>
+ </table>
+<br>
+<input type=button name=butbg value="Try BG" onclick="bgcol();">
+<input type=button name=butfg value="Try FG" onclick="fgcol();">
+<input type=button name=butcol value="Try ALL" onclick="col();">
+
+</form>
+</body>
