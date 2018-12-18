@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js39.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 39 --><FONT color=blue>
+<H3>39. Calendar </H3>
+<CENTER><TEXTAREA name=js39 rows=50 wrap=hard cols=95>&lt;html&gt;
+	&lt;head&gt;
+	&lt;/head&gt;
+	&lt;body bgcolor="#ffff22"&gt;&lt;center&gt;
+		&lt;form name="calendar"&gt;
+			&lt;input type="text" name="clock" size=7&gt;&lt;br&gt;
+			&lt;input type="text" name="date" size=15&gt;
+		&lt;/form&gt;
+		
+		&lt;script&gt;
+		
+			function liveclock() {
+				curdate = new Date()
+				hours = curdate.getHours()
+				minutes = curdate.getMinutes()
+				seconds = curdate.getSeconds()
+				if (hours &lt; 10)
+					hours="0" + hours;
+				if (minutes &lt; 10)
+					minutes = "0" + minutes;
+				if (seconds &lt; 10)
+					seconds = "0" + seconds;
+				
+				thetime=" "+hours+":"+minutes+":"+seconds;
+				document.calendar.clock.value = thetime;
+				
+				day = curdate.toGMTString()
+				day = day.substring(0,day.length-12) 
+				document.calendar.date.value=" "+day;
+				
+				setTimeout("liveclock()",1000);
+			}
+		
+			liveclock();
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js39.value) type=button value=Run> <INPUT onclick="location='js40.htm'" type=button value=Next> <INPUT onclick="location='js38.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR>&nbsp;
+<H2><FONT color=blue></FONT></H2>
+<P><BR></FONT></FONT><!-- End of JS Example 40  --></P></H4></BODY></HTML>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js13.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 13 --><FONT color=blue>
+<H3>13. Strings</H3>
+<CENTER><TEXTAREA name=js13 rows=23 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script&gt;
+			str1="The morning is upon us.";
+			str2=str1.slice(3,-5);
+			document.write("the original string was: "+str1.bold()+"&lt;br&gt;");
+			document.write("the original string length was: "
+				+str1.length+"&lt;br&gt;");
+			document.write("the string after slicing is: "+str2.big()+"&lt;br&gt;");
+			document.write("the upper case striked original string: "
+				+str1.toUpperCase().strike()+"&lt;br&gt;");
+		&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js13.value) type=button value=Run> <INPUT onclick="location='js14.htm'" type=button value=Next> <INPUT onclick="location='js12.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P>The String object serves as built-in library of string functions. <BR>No need 
+to create an instance of it or to include or import it explicitly as it is 
+invoked whenever a string is used. <BR>It is possible however to create a new 
+String explicitly. There is a slight difference in the behaviour of a string if 
+it is created implicitly as a literal or an object, but that is very seldom.<BR>
+<P>Syntax to create a string:<BR><BR><CODE>s1 = "foo" // creates a string 
+literal value<BR>s2 = new String("foo") // creates a String object 
+</CODE><BR><BR><BR>
+<CENTER><A 
+href="http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/string.htm">String 
+Reference</A> 
+</FONT></FONT><!-- End of JS Example 13  --></CENTER></H4></BODY></HTML>

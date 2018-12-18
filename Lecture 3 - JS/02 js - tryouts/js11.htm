@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js11.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 11 --><FONT color=blue>
+<H3>11. Input and Output:</H3>
+<CENTER><TEXTAREA name=js11 rows=22 wrap=hard cols=80>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script&gt;
+			myname=prompt('Please enter your name:')
+			document.write("Hello " + myname);
+		&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	&lt;form name=f&gt;
+		&lt;input name=t size=8&gt;
+			&lt;input type=button onClick="t.value=myname"
+			  value="Press the button to get your name"&gt; 
+	 &lt;/form&gt;
+	 &lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js11.value) type=button value=Run> <INPUT onclick="location='js12.htm'" type=button value=Next> <INPUT onclick="location='js10.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>The special output features are: 
+<DL>
+  
+  <UL>
+    <LI>to a document(frame) - document.write(string) 
+    <LI>to a dialog pop-up window - 
+    <UL>
+      <LI>alert(string) 
+      <LI>prompt(string) 
+      <LI>confirm(string) </LI></UL>
+    <LI>to an object (usually to a form) - 
+    <UL>
+      <LI>visual or text 
+      <LI>assigning or changing a property 
+</LI></UL></LI></UL></DD></DL></FONT></FONT>
+<UL></UL><!-- End of JS Example 11  --></H4></BODY></HTML>

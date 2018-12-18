@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js07.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example  7 --><FONT color=blue>
+<H3>7. IF conditional statement</H3>
+<CENTER><TEXTAREA name=js7 rows=24 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script&gt;
+			function check(grade) {	
+				document.write("&lt;font color=red&gt;")
+				if(grade&gt;60)
+					document.write("You passed the exam");
+				else
+					document.write("You failed the exam")
+		     }
+		 &lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form name=f&gt;
+			&lt;label&gt;Enter your grade&lt;/label&gt;
+			&lt;input type=text name=grade onChange="check(f.grade.value)"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js7.value) type=button value=Run> <INPUT onclick="location='js08.htm'" type=button value=Next> <INPUT onclick="location='js6a.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple><BR><BR><BR>
+<CENTER>
+<H2>Comparison Operators</H2>
+<TABLE width="50%" bgColor=lightblue border=1>
+  <TBODY>
+  <TR>
+    <TH align=left>Operator</TH>
+    <TH align=left>Meaning</TH></TR>
+  <TR>
+    <TD vAlign=top>==</TD>
+    <TD vAlign=top>is equal to</TD></TR>
+  <TR>
+    <TD vAlign=top>!=</TD>
+    <TD vAlign=top>is not equal to</TD></TR>
+  <TR>
+    <TD vAlign=top>&gt;</TD>
+    <TD vAlign=top>is greater than</TD></TR>
+  <TR>
+    <TD vAlign=top>&gt;=</TD>
+    <TD vAlign=top>is greater than or equal to</TD></TR>
+  <TR>
+    <TD vAlign=top>&lt;</TD>
+    <TD vAlign=top>is less than</TD></TR>
+  <TR>
+    <TD vAlign=top>&lt;=</TD>
+    <TD vAlign=top>is less than or equal to</TD></TR>
+  <TR>
+    <TD vAlign=top>||</TD>
+    <TD vAlign=top>or</TD></TR>
+  <TR>
+    <TD vAlign=top>&amp;&amp;</TD>
+    <TD vAlign=top>and</TD></TR></TBODY></TABLE></CENTER></FONT></FONT><!-- End of JS Example 6  --></H4></BODY></HTML>

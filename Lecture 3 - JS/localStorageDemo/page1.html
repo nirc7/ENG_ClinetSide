@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script>
+        function func1() {
+            debugger;
+            var arr = new Array();
+            for (var i = 0; i < 3; i++) {
+                arr[i] = "avi" + i;
+            }
+            //alert(JSON.stringify(arr));
+            localStorage.myArr = JSON.stringify( arr);
+            location = 'page2.html';
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="do"  onclick="func1()"/>
+</body>
+</html>

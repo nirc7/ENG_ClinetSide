@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js14.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 14 --><FONT color=blue>
+<H3>14. Array - the basic data structure:</H3>
+<CENTER><TEXTAREA name=js14 rows=28 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		This document includes an array whose elements are:&lt;br&gt;&lt;br&gt;
+		&lt;script&gt;
+			// simple vector array initialization
+			a = new Array();
+			// one-dimensional array assignment
+			for(i = 0; i &lt; 8; i++) 
+				a[i] = i ;
+			// output array to screen
+			function getArray(a) {
+				for(i = 0;i &lt; a.length; i++) 
+					document.write(i + "=" + a[i] + "&lt;br&gt;");
+			}	
+			
+			getArray(a);
+			b=a.slice(2,5);
+			document.write("After slicing: &lt;br&gt;");
+			getArray(b);
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js14.value) type=button value=Run> <INPUT onclick="location='js15.htm'" type=button value=Next> <INPUT onclick="location='js13.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>The JS Array has the advantages of both array and linked 
+list in other languages. As JS is not typed, it can even serve as a struct, or 
+list of structs. <BR><BR>Array has the following characteristics: 
+<DL>
+  <DT>immediate access - 
+  <DD>in <I>O</I>(1) time to any element 
+  <DT>dynamic - 
+  <DD>the length is increased as needed 
+  <DT>automatic initialization - 
+  <DD>all the undefined elements are initialized to "undefined" 
+  <DT>gaps allowed - 
+  <DD>it is possible to init any element, even if previous have not been 
+  declared or initialized, or even outside the length 
+  <DT>automatic typing - 
+  <DD>all are treated as strings and converted as needed </DD></DL>
+<CENTER><A 
+href="http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/array.htm">Array 
+reference</A> 
+</FONT></FONT><!-- End of JS Example 14  --></CENTER></H4></BODY></HTML>

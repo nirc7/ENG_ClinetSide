@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js21.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 21 --><FONT color=blue>
+<H3>21. Class variables and prototype </H3>
+<CENTER><TEXTAREA name=js21 rows=35 wrap=hard cols=95>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+			/* create a new object class - Circle*/
+			function Circle(radius) {
+				this.radius=radius;
+			}
+
+			//Class variable
+			Circle.PI=3.14159;
+
+			function Circle_area() {
+				return Circle.PI*this.radius*this.radius;  
+			}
+
+			function Circle_diameter() {
+				return 2*this.radius; 
+			}
+
+			
+			/* Creation a prototype object and assigning properties to it*/
+			new Circle(0);
+			Circle.prototype.area = Circle_area;
+			Circle.prototype.diameter = Circle_diameter;
+
+			c1 = new Circle(4);
+			c2 = new Circle(3);
+				document.write("Area of the first circle is: " +
+				 c1.area()+" and diameter is: "+ c1.diameter() +"&lt;p&gt;");
+				document.write("Area of the second circle is: " + 
+				 c2.area()+" and diameter is: "+ c2.diameter() +"&lt;br&gt;");
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js21.value) type=button value=Run> <INPUT onclick="location='js22.htm'" type=button value=Next> <INPUT onclick="location='js20.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR><FONT color=blue>&nbsp;
+<H2>Prototype </H2></FONT>
+<P>Prototype creates a "template" or prototype of an object. This does not 
+create an actual instance of the object, but defines the structure of the 
+object. the usage is<BR><FONT color=blue>ClassName.prototype.propertyName<BR>or 
+<BR>ClassName.prototype.methodName</FONT> 
+<P><BR><FONT color=blue>&nbsp;
+<H2>Class Variable </H2></FONT>
+<P>Class variable also called static variable is a variable that assosiates with 
+a class itself and not its instances.<BR>There is only one copy of class 
+variable. 
+<P>SYNTAX:<BR><FONT color=blue>ClassName.VariableName </FONT></FONT></FONT><!-- End of JS Example 21  --></P></H4></BODY></HTML>

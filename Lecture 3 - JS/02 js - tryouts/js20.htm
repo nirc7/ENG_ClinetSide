@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js20.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 20 --><FONT color=blue>
+<H3>20. Object methods (2) </H3>
+<CENTER><TEXTAREA name=js20 rows=40 wrap=hard cols=95>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+			/* function that is instance method of the class.
+			 *  this refer to the current object
+			 */
+			function Rectangle_perimeter()
+			{  
+				return 2 * (this.width + this.height);
+			}
+
+			/* create a new object class - Rectangle
+			 * Constructor of the class that initialize properties
+			 * and also assign methods
+			 */
+			 function Rectangle(width,height)
+			 {
+				//initialize object properties
+				this.width = width;
+				this.height = height;
+				//define methods for the objects
+				this.perimeter = Rectangle_perimeter;
+			 }
+
+			r1=new Rectangle(3,4); // instance of Rectangle called r1
+			r2=new Rectangle(2,3); // instance of Rectangle called r2
+
+			p = r1.perimeter();
+			document.write("perimeter of the first rectangle is "+ p +"&lt;br&gt;");
+			p = r2.perimeter();
+			document.write("perimeter of the second rectangle is "+ p +"&lt;br&gt;");
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;	
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js20.value) type=button value=Run> <INPUT onclick="location='js21.htm'" type=button value=Next> <INPUT onclick="location='js19.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR><FONT color=blue>&nbsp;
+<H2></H2></FONT></FONT></FONT><!-- End of JS Example 19  --></H4></BODY></HTML>

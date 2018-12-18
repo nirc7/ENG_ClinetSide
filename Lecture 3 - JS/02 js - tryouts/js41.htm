@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js41.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 40 --><FONT color=blue>
+<H3>41. Redirecting</H3>
+<P>This example opens a window with a redirecting message. The window will close 
+after 2 seconds.</P>
+<CENTER><TEXTAREA name=js41 rows=24 wrap=hard cols=110>	
+&lt;html&gt;
+	
+	&lt;script&gt;
+			NewWindow = window.open("","","width=200,height=200")
+			NewWindow.document.write("you are being redirected to www.google.co.il")
+			setTimeout("f()",2000) 
+			
+			
+			function f() {
+				NewWindow.close();
+				window.location="http://www.google.co.il"
+
+				
+			}
+
+	&lt;/script&gt;
+
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js41.value) type=button value=Run> <INPUT onclick="location='js42.htm'" type=button value=Next> <INPUT onclick="location='js40.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR>&nbsp;
+<H2><FONT color=blue></FONT></H2>
+<P><BR></FONT></FONT><!-- End of JS Example 40  --></P></H4></BODY></HTML>

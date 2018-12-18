@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js29.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 29 --><FONT color=blue>
+<H3>29. Window object - open/close window </H3>
+<CENTER><TEXTAREA name=js29 rows=39 wrap=hard cols=95>&lt;html&gt;
+	&lt;head&gt;
+	&lt;script&gt; 
+		function myMsgBox(msg) { 
+			//set up window options 
+			stats='toolbar=no,location=no,directories=no,status=no,menubar=no,' 
+			stats += 'scrollbars=no,resizable=no,width=400,height=100' 
+			MsgBox = window.open("","Window",stats) 
+
+			//set window back color, text color, show msg, and OK button. 
+			MsgBox.document.write("&lt;BODY bgColor='black' text='white'&gt;") 
+			MsgBox.document.write("&lt;H2&gt;&lt;CENTER&gt;",msg,"&lt;/CENTER&gt;&lt;/H2&gt;") 
+			MsgBox.document.write("&lt;FORM&gt;&lt;CENTER&gt;") 
+
+			// 	close the window: when reader clicks the OK button
+			//  in this message window, close the message window. 
+		
+			MsgBox.document.write("&lt;INPUT type='button' value='OK' " 
+			 + "onClick='self.close()'&gt;") 
+			MsgBox.document.write ("&lt;/CENTER&gt;&lt;/FORM&gt;"); 
+		} 
+	&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form&gt;&lt;center&gt; 
+			&lt;input type=button value='Click me to see a custom message window' 
+			 onClick = 'myMsgBox("Hello World")'&gt; 
+		&lt;/form&gt; 
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js29.value) type=button value=Run> <INPUT onclick="location='js30.htm'" type=button value=Next> <INPUT onclick="location='js28.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR><FONT 
+color=blue></FONT></FONT></FONT><!-- End of JS Example 29  --></P></H4></BODY></HTML>

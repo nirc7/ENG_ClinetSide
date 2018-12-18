@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js10.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 10 --><FONT color=blue>
+<H3>10. While statement</H3>
+<CENTER><TEXTAREA name=js10 rows=34 wrap=hard cols=90>&lt;html&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+			sum=0
+			function whiletest(intvalue)
+			{
+				document.write("&lt;br&gt;The &#8721; of all elements from 1 till " 
+					+ intvalue + " is ");
+				while(intvalue &gt; 0 )
+				{  
+					sum += intvalue; 
+					if (intvalue &gt; 1) 
+						document.write(intvalue+"+");
+					else 
+						document.write(intvalue)
+					intvalue--;
+			   }
+			   document.write("="+sum);
+			}
+		&lt;/script&gt;
+		&lt;form name=f&gt;
+			&lt;label&gt;Enter a number&lt;/label&gt;
+			&lt;input type=text name=number size=3 
+			onChange="whiletest(parseInt(f.number.value))"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js10.value) type=button value=Run> <INPUT onclick="location='js11.htm'" type=button value=Next> <INPUT onclick="location='js9.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple><BR>&nbsp; 
+<P>WHILE SYNTAX <BR><BR><TEXTAREA rows=6 wrap=hard cols=60>while (condition)
+{
+    code to be executed
+}
+</TEXTAREA><BR><BR>&nbsp; 
+<P>DO .. WHILE SYNTAX <BR><BR><TEXTAREA rows=7 wrap=hard cols=60>do
+{
+    code to be executed
+} while (condition)
+</TEXTAREA><BR>&nbsp;<BR>
+<P>
+<H2>Function <I>parseInt()</I></H2>
+<UL>
+  <LI>receives a string as argument 
+  <LI>returns an interger representation of the string </LI></UL>Example: 
+<BR>c=parseInt("1234") <BR>c value is 1234. </FONT></FONT><!-- End of JS Example 10  --></H4></BODY></HTML>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js18.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 18 --><FONT color=blue>
+<H3>18. Objects, Constructors and Variables </H3>
+<CENTER><TEXTAREA name=js18 rows=50 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;center&gt;&lt;h3&gt;&lt;i&gt;Global variables wraped in Object&lt;/i&gt;&lt;/h3&gt;&lt;/center&gt;
+		&lt;script&gt;
+			/* create a new object class - Num
+			Constructor of the class */
+			function Num(z) {
+				this.value = z;
+			}
+
+			x = new Num(0); // create an instance of num called x
+			y = new Num(10); // create an instance of num called y
+
+			// show initial value of x and y
+			document.write("initial value of x is " + x.value + "&lt;br&gt;");
+			document.write("initial value of y is " + y.value + "&lt;p&gt;");
+
+
+			function f1(x1)
+			{  
+				x1.value++;
+				document.write("Inside f1.The value of the argument is " 
+				+ x1.value+"&lt;br&gt;");
+			}
+
+			function f2()
+			{
+				x.value++;
+				document.write("Inside f2.The  value of the argument is " 
+				+ x.value+"&lt;p&gt;");
+			}
+			
+			f1(x);  f1(y);  f2();
+			
+			document.write("outside value of x is "+x.value+"&lt;br&gt;");
+			document.write("outside value of y is "+y.value+"&lt;br&gt;");
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js18.value) type=button value=Run> <INPUT onclick="location='js19.htm'" type=button value=Next> <INPUT onclick="location='js17.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR><FONT color=blue>&nbsp;
+<H2>Constructor</H2></FONT>
+<P>If you wish to create an object different from predefined JS objects than you 
+have to write a constructor for this object. 
+<UL>
+  <LI>First you write your constructor using <BR><FONT color=blue>function 
+  ClassName(Arglist) <BR>{<BR>// initialization using <B><I>this operator 
+  </I></B><BR>} <BR>&nbsp;</FONT> 
+  <LI>you invoke your constructor by using <B><I>new operator</I></B> <BR><FONT 
+  color=blue>variable = new ClassName(Arglist); <BR>&nbsp;</FONT> 
+  <LI>constructor creates a new instance of your object and performs an 
+  appropriate initialization of it </LI></UL></FONT></FONT><!-- End of JS Example 17a  --></H4></BODY></HTML>

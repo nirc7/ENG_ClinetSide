@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js23.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 23 --><FONT color=blue>
+<H3>23. Date predifined class - time </H3>
+<CENTER><TEXTAREA name=js23 rows=32 wrap=hard cols=99>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+			function getTime()
+			{
+				var d = new Date()
+				var hour = d.getHours();
+				var minute = d.getMinutes();
+				var second = d.getSeconds(); 
+				temp =  d.getHours()+":" + d.getMinutes() + ":"+d.getSeconds(); 
+				return temp;
+			}
+		
+		&lt;/script&gt;
+		
+		&lt;form name=f&gt;&lt;center&gt;
+			&lt;input type=text name=time value="Not assign yet"&gt;
+			&lt;input type=button name=b 
+				value="Click here to get time" onClick="f.time.value=getTime()"&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js23.value) type=button value=Run> <INPUT onclick="location='js24.htm'" type=button value=Next> <INPUT onclick="location='js22.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR><FONT color=blue>&nbsp;
+<H2>Some methods of Date </H2></FONT>
+<TABLE width="80%" bgColor=lightblue border=1>
+  <TBODY>
+  <TR>
+    <TH align=left width="25%">Methods</TH>
+    <TH align=left>Explanation</TH></TR>
+  <TR>
+    <TD vAlign=top>Date() </TD>
+    <TD vAlign=top>Returns a new Date object</TD></TR>
+  <TR>
+    <TD vAlign=top>getHours()</TD>
+    <TD vAlign=top>Returns the hours from a Date object. (0-23)</TD></TR>
+  <TR>
+    <TD vAlign=top>getMinutes()</TD>
+    <TD vAlign=top>Returns the minutes from a Date object. (0-59)</TD></TR>
+  <TR>
+    <TD vAlign=top>getSeconds()</TD>
+    <TD vAlign=top>Returns the seconds from a Date object. (0-59)</TD></TR>
+  <TR>
+    <TD vAlign=top>getTime()</TD>
+    <TD vAlign=top>Returns a Date in 
+milliseconds</TD></TR></TBODY></TABLE></FONT></FONT><!-- End of JS Example 23  --></H4></BODY></HTML>

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js40.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 40 --><FONT color=blue>
+<H3>40. Redirecting and Dynamic messages </H3>
+<CENTER><TEXTAREA name=js40 rows=40 wrap=hard cols=125>&lt;html&gt;
+	&lt;head&gt;
+	&lt;script language="JavaScript"&gt;
+
+		// define the time interval, target URL and messages that should appear&gt;
+		var targetdestination = "http://www.google.co.il/" 
+		
+		var splashmessage = new Array() 
+		splashmessage[0] = "Welcome to lab 3." 
+		splashmessage[1] = "This is the last java script lab." 
+		splashmessage[2] = "Next Week .... HTML5" 
+		splashmessage[3] = "You will be now redirected to google.co.il ..." 
+		splashmessage[4] = "Thank you for visiting." 
+		
+
+		var openingtags='&lt;font face="Arial" size="4"&gt;' 
+		var closingtags='&lt;/font&gt;' 
+		
+		var i = 0 
+		function displaysplash(){ 
+			if (i &lt; splashmessage.length){ 
+				var htmlcode='&lt;b&gt;&lt;center&gt;'+openingtags+splashmessage[i]
+                htmlcode += closingtags+'&lt;/center&gt;&lt;/b&gt;' ;
+                document.write(htmlcode);
+				i++
+			} 
+			else{ 
+				window.location=targetdestination 
+				return
+			} 
+			setTimeout("displaysplash()",2000) 
+		} 
+		
+		window.onload=displaysplash() 
+	&lt;/script&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+   &lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><input onclick=document.write(js40.value) type=button value=Run> <INPUT onclick="location='js41.htm'" type=button value=Next> <INPUT onclick="location='js39.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR>&nbsp;
+<H2><FONT color=blue></FONT></H2>
+<P><BR></FONT></FONT><!-- End of JS Example 40  --></P></H4></BODY></HTML>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js32.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 32 --><FONT color=blue>
+<H3>32. Interactive Window open/close: </H3>
+<CENTER><TEXTAREA name=js32 rows=89 wrap=hard cols=147>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Window Open&lt;/title&gt;
+		&lt;SCRIPT&gt;
+			// &lt;!--    
+		   var newWindow 
+
+		   // Open Window based on user defined attributes 
+		   function openWindow() { 
+		      // Build the windowAttributes parameter list 
+		      var winAtts = ""
+		      if (document.winOptions.toolbarOption.checked) {
+		         winAtts += "toolbar=1," } 
+		      if (document.winOptions.menubarOption.checked) {
+        		 winAtts += "menubar=1," } 
+		      if (document.winOptions.scrollbarsOption.checked) {
+        		 winAtts += "scrollbars=1," } 
+		      if (document.winOptions.resizableOption.checked) {
+		         winAtts += "resizable=1," } 
+		      if (document.winOptions.statusOption.checked) {
+        		 winAtts += "status=1," } 
+		      if (document.winOptions.locationOption.checked) {
+        		 winAtts += "location=1," } 
+		      if (document.winOptions.directoriesOption.checked) {
+        		 winAtts += "directories=1," } 
+		      if (document.winOptions.copyHistoryOption.checked) {
+        		 winAtts += "copyhistory=1," } 
+		      if (document.winOptions.customSizeOption.checked) {
+        		 winAtts += "height=" + document.winOptions.heightBox.value + ","
+		         winAtts += "width=" + document.winOptions.widthBox.value + ","
+			  }
+				
+				winAtts = winAtts.substring(0, winAtts.length-2)   
+      			// Determine URL 
+				if (document.winOptions.pageType[0].checked) { 
+					var urlVar = ""
+					urlVar = document.winOptions.urlBox.value
+					newWindow = window.open(urlVar,"newWindow",winAtts) }
+				else { 
+					newWindow = window.open("","newWindow",winAtts)
+					newWindow.document.write('&lt;H1&gt;Window Open Test&lt;/H1&gt;&lt;p&gt;') 
+				} 
+			}	
+
+		   // Close Window 
+		   function closeWindow() {
+	    	    newWindow.close()  
+		   } 
+	// --&gt;
+		&lt;/SCRIPT&gt;
+		
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;&lt;font color="#008040"&gt;Window Open Example&lt;/font&gt;&lt;/h1&gt;
+			&lt;p&gt;&lt;i&gt;&lt;b&gt;Please select the following display options and then click the Open Window button. &lt;/i&gt;&lt;/B&gt;&lt;/p&gt;
+		&lt;form name="winOptions" method="POST"&gt;
+			&lt;p&gt;Would you like an existing page or one created on the fly?&lt;/p&gt;
+			&lt;input type=radio checked name="pageType" value="existing"&gt;Existing Page  
+	   	    &lt;input type=text size=30 maxlength=256 name="urlBox"&gt;&lt;/p&gt;
+		    &lt;input type=radio name="pageType" value="dynamic"&gt;Dynamic Page&lt;/p&gt;
+			&lt;hr&gt;
+			&lt;p&gt;Window Attributes:&lt;/p&gt;
+			&lt;pre&gt;
+				&lt;input type=checkbox name="toolbarOption" value="ON"&gt;Toolbar
+				&lt;input type=checkbox name="menubarOption" value="ON"&gt;Menubar 
+				&lt;input type=checkbox name="scrollbarsOption" value="ON"&gt;Scrollbars
+				&lt;input type=checkbox name="resizableOption" value="ON"&gt;Resizable
+			&lt;/pre&gt;
+			&lt;pre&gt;
+				&lt;input type=checkbox name="statusOption"      value="ON"&gt;Status
+				&lt;input type=checkbox name="locationOption"    value="ON"&gt;Location
+				&lt;input type=checkbox name="directoriesOption" value="ON"&gt;Directories
+				&lt;input type=checkbox name="copyHistoryOption" value="ON"&gt;Copy History
+			&lt;/pre&gt;
+			&lt;pre&gt;
+				&lt;input type=checkbox name="customSizeOption" value="ON"&gt;Custom Size
+			&lt;/pre&gt;
+
+			&lt;pre&gt;Width: &lt;input type=text size=5 maxlength=5 name="widthBox"&gt;  Height: &lt;input 
+			   type=text size=5 maxlength=5 name="heightBox"&gt; 
+				   &lt;input type="button" name="OpenButton" value="Open Window" onClick='openWindow()'&gt;  &lt;input 
+			   type="button" name="CloseButton" value="Close Window" onClick="closeWindow()"&gt;
+			&lt;/pre&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js32.value) type=button value=Run> <INPUT onclick="location='js33.htm'" type=button value=Next> <INPUT onclick="location='js31.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR><FONT 
+color=blue></FONT></FONT></FONT><!-- End of JS Example 32  --></P></H4></BODY></HTML>

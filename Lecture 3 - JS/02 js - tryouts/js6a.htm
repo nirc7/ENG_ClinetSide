@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js6a.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example  6a --><FONT color=blue>
+<H3>6a. More Functions</H3>
+<CENTER><TEXTAREA name=js6a rows=26 wrap=hard cols=119>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script&gt;
+			function sum(a,b) {
+				return a + b
+		 	}
+		&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form name=f&gt;
+			&lt;label&gt;Enter first number&lt;/label&gt;
+			&lt;input type=text name=t1 size=3 &gt;&lt;br&gt;
+			&lt;label&gt;Enter second number&lt;/label&gt;
+			&lt;input type=text name=t2 size=3&gt;&lt;br&gt;
+			&lt;input type=button name=b1 value="SUM"
+				 onClick="f.t3.value=sum(parseInt(f.t1.value),parseInt(f.t2.value))"&gt;
+			
+			&lt;br&gt;&lt;label&gt;The result is&lt;/label&gt;
+			&lt;input type=text name=t3 size=9 value="No sum yet"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js6a.value) type=button value=Run> <INPUT onclick="location='js07.htm'" type=button value=Next> <INPUT onclick="location='js06.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT 
+color=purple>
+    
+        <h2>Function <i>parseInt()</i></h2>
+        <ul>
+            <li>receives a string as argument
+            <li>returns an interger representation of the string </li>
+        </ul>Example:
+        <br>c=parseInt("1234") <br>c value is 1234.
+    </FONT></FONT><!-- End of JS Example 6a  --></H4></BODY></HTML>

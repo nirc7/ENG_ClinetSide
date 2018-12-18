@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js42.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 40 --><FONT color=blue>
+<H3>42. Scrolling </H3>
+<CENTER><TEXTAREA name=js42 rows=40 wrap=hard cols=125>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script&gt;
+			stop=0
+			value=0
+			// our main function y-height to start from
+			function scrol() { 
+				var x = 0;
+				scrollTo(x, value); //predefined
+				value+=10;
+				if(stop)
+					 setTimeout('scrol()',100);
+			}
+		&lt;/script&gt;
+	&lt;/head&gt;
+	
+	&lt;!----------every even click start scrolling ------------&gt;
+	&lt;body onClick="stop=(stop+1)%2;scrol();"&gt;
+		&lt;center&gt;&lt;h1&gt;Auto Scrolling&lt;/h1&gt;
+		&lt;script&gt;
+			for (i = 0; i &lt; 10; i++) {
+				document.write("&lt;img src='jeff.gif' width=600 height=500&gt;");
+				for (j = 0; j &lt; 4; j++) {
+					document.write("&lt;br&gt; This is a self scrolling text. To start or ");
+					document.write("stop the autoscrolling - &lt;b&gt;click!&lt;/b&gt;&lt;br&gt;&lt;br&gt;");
+				}					
+			}
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js42.value) type=button value=Run> <INPUT onclick="location='js43.htm'" type=button value=Next> <INPUT onclick="location='js41.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR>&nbsp;
+<H2><FONT color=blue></FONT></H2>
+<P><BR></FONT></FONT><!-- End of JS Example 40  --></P></H4></BODY></HTML>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js19.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 19 --><FONT color=blue>
+<H3>19. Object methods </H3>
+<CENTER><TEXTAREA name=js19 rows=40 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+		/* create a new object class - Rectangle
+		Constructor of the class */
+		function Rectangle(width,height) 
+		{
+			this.width=width;
+			this.height=height;
+   		}
+		
+		// instance of Rectangle called r
+		r = new Rectangle(3,4); 
+		
+		/* function that is instance method of the class.
+		   this refer to the current object
+		 */
+		function compute_perimeter()
+		{  
+			return 2 * (this.width + this.height);
+  		}
+
+		// define a method by assigning it to the property of the object
+		r.perimeter = compute_perimeter;
+		//invoke the method
+		var p = r.perimeter();
+
+		document.write("perimeter of the rectangle is "+p+"&lt;br&gt;");
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js19.value) type=button value=Run> <INPUT onclick="location='js20.htm'" type=button value=Next> <INPUT onclick="location='js18.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR>But we can't invoke perimeter() method by another Rectangle object. we 
+have to assign it to the object first. If we have a lot of objects of the same 
+type it becomes very tiresome. So the solution will be given in <FONT 
+color=blue>next example</FONT>. <FONT color=blue>
+<H2></H2></FONT></FONT></FONT><!-- End of JS Example 19  --></H4></BODY></HTML>

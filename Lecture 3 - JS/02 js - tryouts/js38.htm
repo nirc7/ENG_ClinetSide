@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab6/js38.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 38 --><FONT color=blue>
+<H3>38. setTimeout function </H3>
+<CENTER><TEXTAREA name=js38 rows=30 wrap=hard cols=115>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script&gt;
+			function show_time() {
+				window.status=getTime();
+				setTimeout("show_time()",1000);
+			}	
+			
+			
+			function getTime() {
+				var d      = new Date()
+				var hour   = d.getHours();
+				var minute = d.getMinutes();
+				var second = d.getSeconds(); 
+				temp =  d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds(); 
+				return temp;
+			}
+		&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form name=f&gt;
+			&lt;input type=button value="Click! and see the time in Status Bar" 
+				onClick="show_time()"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js38.value) type=button value=Run> <INPUT onclick="location='js39.htm'" type=button value=Next> <INPUT onclick="location='js37.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>
+<P><BR>&nbsp;
+<H2><FONT color=blue>Timeout </FONT></H2>
+<P><BR>setTimeout(function,number) 
+<UL>
+  <LI>The first parameter is a string, which is going to be the function you 
+  want to use. 
+  <LI>The second parameter is a number. This number is going to be the number of 
+  milliseconds the browser should wait before executing your function. 1000 
+  milliseconds is 1 second. 
+</LI></UL></FONT></FONT><!-- End of JS Example 40  --></H4></BODY></HTML>

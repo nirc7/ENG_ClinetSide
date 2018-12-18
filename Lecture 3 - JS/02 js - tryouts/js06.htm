@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js06.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example  6 --><FONT color=blue>
+<H3>6. Functions And Scope (VAR)</H3>
+<CENTER><TEXTAREA name=js6 rows=15 wrap=hard cols=80>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+		   function sum(a,b)
+		   {
+				return a+b
+		   }
+		   document.write("The sum of 5+4 is "+sum(4,5))
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js6.value) type=button value=Run> <INPUT onclick="location='js6a.htm'" type=button value=Next> <INPUT onclick="location='js05.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple><BR><BR><FONT color=blue>
+<H2><I>Function definition</I></H2></FONT>
+<P>Syntax <BR><BR><TEXTAREA rows=7 wrap=hard cols=60>function myfunction(argument1,argument2,etc)
+{
+some statements
+}
+</TEXTAREA><BR><BR>Some functions can return values using <I>return</I> keyword. 
+<BR>&nbsp;<BR><BR><FONT color=blue>
+<H2><I>Lifetime of Variables</I></H2></FONT>
+<P><I>Local variable</I> 
+<P>A variable within a function which is declared as is <span style="font:bold;color:red">VAR</span> is a <I>local variable</I> and can only be 
+accessed only within that function. <BR>When you exit the function, the variable is 
+destroyed. ALL other varialbes are global.
+<P><I>Global variable</I> 
+<P>If you declare a variable outside a function then it is <I>global 
+variable</I>. <BR>All the functions on your page can access it. <BR>The lifetime 
+of these variables starts when they are declared, and ends when the page is 
+closed. </FONT></FONT><!-- End of JS Example 6  --></P></H4></BODY></HTML>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js08.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example  8 --><FONT color=blue>
+<H3>8. Switch conditional statement</H3>
+<CENTER><TEXTAREA name=js8 rows=24 wrap=hard cols=80>&lt;html&gt;
+	&lt;body&gt;
+		&lt;script&gt;
+			var d = new Date() //get's the date
+			theDay=d.getDay() //returns the day of the week
+			document.write("&lt;font color=red&gt;&lt;h2&gt;")
+			switch (theDay) {
+			  case 5:  document.write("Finally Friday");break
+			  case 6:  document.write("Shabath");break
+			  default: document.write("It is not a week-end!")
+		    }
+			document.write("&lt;font color=blue&gt;")
+			document.write("&lt;/h2&gt;")
+			document.write("Today date is:"+d)
+		&lt;/script&gt;
+		&lt;p&gt;This example demonstrates the switch statement.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js8.value) type=button value=Run> <INPUT onclick="location='js09.htm'" type=button value=Next> <INPUT onclick="location='js07.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT 
+color=purple></FONT></FONT><!-- End of JS Example 8  --></H4></BODY></HTML>

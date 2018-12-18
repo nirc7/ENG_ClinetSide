@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab5/js17.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example 17 --><FONT color=blue>
+<H3>17. Objects </H3>
+<CENTER><TEXTAREA name=js17 rows=35 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;center&gt;&lt;h3&gt;&lt;i&gt; Object&lt;/i&gt;&lt;/h3&gt;&lt;/center&gt;
+		&lt;script&gt;
+			//create an object and store it in book1	
+			var book1 = new Object(); 
+			
+			//books properties
+			book1.title="JavaScript Tutorial";
+			book1.pages=100;
+			book1.number_of_examples=25;
+			
+			//create an object and store it in book2
+			var book2 = new Object(); 
+			book2 = { title:"HTML Tutorial", number_of_examples:43};
+			function writeProperties(obj)
+			{
+			  document.write("Current object properties:&lt;BR&gt;");
+			  for(var prop in obj)  
+			 	 document.write("prop = " + prop + "&lt;BR&gt;");
+			  document.write("&lt;p&gt;Title: "+ obj.title + 
+				   	"&lt;br&gt;Number of examples: "
+				   	+   obj.number_of_examples 
+				   	+ "&lt;br&gt;Number of pages: "
+				  	+ obj.pages+"&lt;p&gt;");
+			 }
+			
+			writeProperties(book1)
+			writeProperties(book2)
+		&lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js17.value) type=button value=Run> <INPUT onclick="location='js18.htm'" type=button value=Next> <INPUT onclick="location='js16.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple><FONT color=blue>
+<H2>Object</H2></FONT>
+<P><BR>An object is a "package" of data, a collection of properties (variables) 
+and methods (functions) all classed under a single name. 
+<P>Access to the property of the object is done in following way:<BR><FONT 
+color=blue>objectName.propertyName </FONT>
+<P>Access to the method of the object is done in following way:<BR><FONT 
+color=blue>objectName.methodName(ArgList) </FONT></FONT></FONT><!-- End of JS Example 17  --></P></H4></BODY></HTML>

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://www1.idc.ac.il/usersftp/cs/eran/html/lab4/js02.htm -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1255">
+<META content="MSHTML 6.00.2900.2523" name=GENERATOR></HEAD>
+<BODY bgColor=#dddddd>
+<CENTER>
+<H1>JavaScript tutorial<BR><SUP><FONT color=gray size=3>© Rina Zviel-Girshin 
+</FONT></SUP></SMALL></H1></CENTER><!--  Example  2  --><FONT color=blue>
+<H3>2. The #include program:</H3>
+<CENTER><TEXTAREA name=js2 rows=18 wrap=hard cols=90>&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src="hello.js"&gt;&lt;/script&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;form&gt;
+			&lt;input type=button onClick="f()"
+			 value="Call a function from hello.js"&gt;
+		&lt;/form&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</TEXTAREA> 
+<FORM><INPUT onclick=document.write(js2.value) type=button value=Run> <INPUT onclick="location='js03.htm'" type=button value=Next> <INPUT onclick="location='js01.htm'" type=button value=Prev> </FORM></CENTER>
+<H4><FONT color=purple>The code can be embedded in HTML in two ways: 
+<DL>
+  <DT>directly - 
+  <DD>by listing the code inside SCRIPT element 
+  <DT>importing - 
+  <DD>by listing the code in another JS file and calling inside the SCRIPT 
+  element the JS file </DD></DL>
+<P>The JS file is any text file, including only the JS code and having the .js 
+name ending. 
+<P>The including of the imported file is using the SRC property of the SCRIPT 
+tag: 
+<P>
+<CENTER>&lt;script src="filename.js"&gt;&lt;script&gt;</CENTER>
+<P>The code does not have to be imported at the beginning of the HTML file. The 
+code is performed in the place where it is inserted. 
+<P><FONT color=red>Example - calling a function from an included 
+file:<BR><BR></FONT>The file "hello.js" listing:<BR><BR><TEXTAREA rows=12 wrap=hard cols=75>function f()
+  {  
+	alert('Hello World!')  
+  }
+
+</TEXTAREA> <BR><BR><BR>The calling HTML file listing:<BR><BR><FONT 
+color=blue>&lt;script 
+src="hello.js"&gt;&lt;/script&gt;<BR>&lt;script&gt;f()&lt;/script&gt; 
+</FONT></FONT></FONT><!-- End of JS Example 2  --></P></H4></BODY></HTML>
