@@ -1,0 +1,56 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 6  -->
+<font color=blue>
+<h3>6a.  CSS - Cascading Order</h3>
+<center> 
+<textarea name="dhex6a" wrap=hard cols=60 rows=11>
+<html><head>
+<style>
+   .gray-red     { background-color:#EEEEEE; 
+	           color: red     }
+   .big-blue     { font: 18pt Arial bold;
+                   color:blue;      }
+   .bgtomato	 {  background-color:tomato; }
+   .caps         {  font-variant:small-caps}	
+</style></head>
+<body class="gray-red">
+<p class="big-blue bgtomato caps">this is a para belonging to three classes: big-blue and bgtomato and caps!</p>
+</body></html>
+</textarea>
+
+<FORM>
+<input type=button onClick="document.write(dhex6a.value)" value="Run">
+<input type=button onClick="location='dhex7.html'" value="Next">
+<input type=button onClick="location='dhex6.html'" value="Prev">
+</form>
+</center>
+
+<br>
+<h4><font color=purple>
+
+<p><center>
+<h3><font color=blue>What style will be used when there is more than one style<br> specified for an HTML element?</font></center>
+</h4>
+<p>All the styles will "cascade" into a new "virtual" Style Sheet.
+<br> As in <br><font color=red>&lt;p class="big-blue bgtomato caps">this is a para belonging to three classes: big-blue and bgtomato and caps!&lt;/p></font>
+<p>
+In case of collisions the following <font color=blue> <i><u>highest priority rules</u></i></font> will be applied:
+<ol>
+<li>Browser default 
+<li>External Style Sheet 
+<li>Internal Style Sheet (inside the &lt;head> tag) 
+<li>Inline Style (inside HTML element) 
+</ol>
+<p>where an inline style (inside an HTML element) has the highest priority.<br>It will override every style declared inside <ul><li>the &lt;head> tag<li> in an external style sheet<li> and in a browser (a default value).</ul>
+
+
+
+ <!-- End of Example 6 -->
+
+ 

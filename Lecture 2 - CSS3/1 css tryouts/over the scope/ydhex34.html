@@ -1,0 +1,161 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>Yarden CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 34  -->
+<font color=blue>
+<h3>34.  CSS - Layering:</h3>
+<center> 
+<textarea name="ydhex34" wrap=hard cols=60 rows=10>
+<html><head><style>
+.VIS {	color: red; visibility: visible     }
+.HID {	display: none; visibility: hidden    }
+</style></head><body>
+<script>
+var allv=false; //all visible is false
+/*
+//		function vis(x) implementation
+//
+// aim: change (show/hide) section x of the document
+// implementation: toggling the class of element x
+// detail: HID class has the visibility property "hidden"
+//  	   VIS class has the visibility property "visible"
+*/
+function vis(x)
+{
+if(x.className=='HID') x.className='VIS';
+else x.className='HID';
+}
+
+/*
+//		function allvis() implementation
+//
+// aim: show all sections of the document - full text
+// implementation: the class of all elements are VIS
+*/
+function allvis()
+{
+/*
+ "document.all.tags" is predefined browser object
+ "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span');
+// as every array it has the "length" property
+// we need it for the "for" loop
+// traverse all the "span" alements
+for(i=0;i<spans.length;i++)
+// if the "span" element belongs to HID (not visible)
+// make it visible
+if(spans[i].className=='HID') spans[i].className='VIS';
+allv=true;
+}
+
+/*
+//		function top() implementation
+//
+// aim: show only highest level sections of the doc
+// implementation: the class of all but the highest are HID
+// detail: the highest have no class, not even "VIS"
+//         all having "VIS" class become "HID"
+//         all others - either already HID or are 
+//         at the highest level.
+//	   HID class has the visibility property "hidden"
+//  	   VIS class has the visibility property "visible"
+*/
+
+function top()
+{
+/*
+ "document.all.tags" is predefined browser object
+ "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span')
+// traverse all the "span" alements
+for(i=0;i<spans.length;i++)
+// if the "span" element belongs to VIS (both visible and not highest)
+// make it HID
+if(spans[i].className=='VIS') spans[i].className='HID';
+allv=false;
+}
+</script>
+<center>
+<font color=gray size=2><a href="javascript:allvis();">All Levels</a>
+to see/hide next level - click on higher level!    
+<a href="javascript:top();">Top Level</a></font>
+<hr></center>
+<font color=purple>
+<H2>JavaScript</H2>
+<H4><span onclick=vis(JS1)>JS </span>
+<span class=HID id=JS1 onclick=vis(JS11)>
+<p>JavaScript is programming language for the 
+Internet.<br></span>
+<span class=HID id=JS11>
+<br><font color=#bb0000>JavaScript is programming language in the sense that it includes all the operations and expressions of any basic programming language, like C, Pascal, Basic. It is for the Internet in more than one sense. Among others: 
+<ul>
+  <li>it is interpreted from (inside) a browser 
+  <li>it has predefined functions very usefull for Internet documents 
+  <li>it interacts directly with HTML 
+  <li>it interacts directly with browser and its objects 
+  <li>it has a built-in security very usefull for the Internet - it does not 
+  include any file operations 
+</ul></font></span>
+
+<span onclick=vis(JS2)><br>C for the WWW </span>
+<span class=HID id=JS2><BR><BR>JS could be 
+called C for the WWW, as it has special features for the HTTP server and client 
+- the browser, but also most of the features of C.<p></span><br>
+
+<span onclick=vis(JS3)>C3S </span>
+<span class=HID id=JS3 onclick=vis(JS31)><p>
+JS is C3S: C SSS - C Smaller, Simpler, Smarter.
+<br></span>
+<br><span class=HID id=JS31>
+
+<span onclick=vis(smaller)>
+<font color=#bb0000>Smaller: </font></span>
+<span class=HID id=smaller><font color=#770000>
+<ul>
+  <li>No types - no need to declare variables or functions types 
+  <li>No pointers 
+  <li>No structs 
+  <li>No C I/O including file operations 
+  <li>No direct access to memory </LI></UL></FONT></span><br>
+
+<span onclick=vis(simpler)><font color=#bb0000>Simpler: </font></span>
+<span class=HID id=simpler><font color=#770000>
+<ul>
+  <li>No MAIN function 
+  <li>No semicolon (;) at the end of statement 
+  <li>A forgiving Interpreter 
+  <li>All variables transfered by values 
+  <li>All objects transfered by reference 
+</ul></font></span><br>
+<span onclick=vis(smarter)><FONT color=#bb0000>Smarter: </font></span>
+<span class=HID id=smarter><font color=#770000>
+<ul>
+  <li>Type conversion is automatic when needed 
+  <li>OOP 
+  <li>Predefined smart Objects and Functions 
+  <li>Direct access to many browser Objects 
+</ul></font></span></body></html></textarea>
+
+<form>
+<input type=button onClick="document.write(ydhex34.value)" value="Run">
+<input type=button onClick="location='ydhex35.html'" value="Next">
+<input type=button onClick="location='ydhex33.html'" value="Prev">
+</form>
+</center>
+<br>
+<h4><font color=purple>
+The<font color=red> display</font> property sets how/if an element is displayed.
+<ul>
+<li>none - the element will not be displayed 
+<li>block -  the element will be displayed as a block-level element, with a line break before and after the element
+<li>list-item - the element will be displayed as a list
+</ul> 
+ <!-- End of Example 34 -->
+
+ 

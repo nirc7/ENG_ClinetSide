@@ -1,0 +1,129 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 22  -->
+<font color=blue>
+<h3>22.  CSS - border:</h3>
+<center> 
+<textarea name="ydhex22" wrap=hard cols=60 rows=10>
+<html><head></head>
+<style>
+.dotted {border-style: dotted;
+	border-color: red green blue}
+.dashed {border-style: dashed;
+	border-color:red blue green purple;}
+.solid {border-style: solid}
+.double {border-style: double}
+.groove {border-style: groove}
+.ridge {border-style: ridge}
+.inset {border-style: inset;
+	border-width: 5mm medium}
+.outset {border-style: outset}
+</style><body>
+<p class="dotted">
+A dotted border<br>paragraph</p>
+<p class="dashed">
+A dashed border<br>paragraph</p>
+<p class="solid">
+A solid border<br>paragraph</p>
+<p class="double">
+A double border paragraph</p>
+<p class="groove">
+A groove border paragraph</p>
+<p class="ridge">
+A ridge border paragraph</p>
+<p class="inset">
+An inset border paragraph</p>
+<p class="outset">
+An outset border paragraph</p>
+</body></html></textarea>
+<FORM>
+<input type=button onClick="document.write(ydhex22.value)" value="Run">
+<input type=button onClick="location='ydhex23.html'" value="Next">
+<input type=button onClick="location='ydhex21.html'" value="Prev">
+</form>
+</center>
+<br>
+<h4><font color=purple>
+The Border properties allow you to set:
+<ul>
+<li>width
+<li>style
+<li>color
+</ul> 
+of an element's border. 
+<br>In HTML we used tables to create borders.
+
+<p><font color=blue size=+2> Border properties</font>
+<p><font color=red>border-style</font> property
+<br>sets the style of the four borders.
+Can have from one to four styles. 
+Possible Values:
+<p><center>
+<table bgcolor=lightblue border="1" width="80%">
+  <tr>
+    <th align=center valign=top width="15%">Value</th>
+    <th align=center valign=top width="75%">Description</th><tr>  
+    <tr>
+      <td valign="top">none</td>
+      <td valign="top">Defines no border</td> </tr>
+    <tr>     <td valign="top">hidden</td>
+      <td valign="top">The same as &quot;none&quot;, except in border conflict
+        resolution for table elements</td>      </tr>
+    <tr>
+      <td valign="top">dotted</td>
+      <td valign="top">Defines a dotted border. Renders as solid in most
+        browsers</td></tr>
+    <tr>
+      <td valign="top">dashed</td>
+      <td valign="top">Defines a dashed border. Renders as solid in most
+        browsers</td>       </tr>
+    <tr>
+      <td valign="top">solid</td>
+      <td valign="top">Defines a solid border</td>
+      </tr>
+    <tr>
+      <td valign="top">double</td>
+      <td valign="top">Defines two borders. The width of the two borders are the
+        same as the border-width value</td>
+       </tr>
+    <tr>
+      <td valign="top">groove</td>
+      <td valign="top">Defines a 3D grooved border. The effect depends on the
+        border-color value</td>
+      </tr>
+    <tr>
+      <td valign="top">ridge</td>
+      <td valign="top">Defines a 3D ridged border. The effect depends on the
+        border-color value</td>
+      </tr>
+    <tr>
+      <td valign="top">inset</td>
+      <td valign="top">Defines a 3D inset border. The effect depends on the
+        border-color value</td>
+       </tr>
+    <tr>
+      <td valign="top">outset</td>
+      <td valign="top">Defines a 3D outset border. The effect depends on the
+        border-color value</td>    </tr>
+</table></center>
+
+   
+
+<p>
+<font color=red>border-width</font> property:
+<br>sets the width of the four borders in one declaration, can have from one to four values.Possible values:
+<ul>
+<li>thin - defines a thin border
+<li>medium - defines a medium border
+<li>thick - defines a thick border 
+<li>length - allows to define the thickness of the borders.  
+</ul>
+
+ <!-- End of Example 22 -->
+
+ 

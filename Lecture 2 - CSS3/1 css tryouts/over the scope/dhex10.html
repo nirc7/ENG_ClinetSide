@@ -1,0 +1,278 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>BGU DHTML TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 10 -->
+<font color=blue>
+<h3>10.  CSS - Drop-down menus:</h3>
+<center> 
+<textarea name="dhex10" wrap=hard cols=60 rows=10>
+<style type="text/css"> 
+
+UL	{list-style-image:url("file.gif")}
+
+OL 	{list-style:upper-roman}
+
+.ol1    {list-style:lower-roman}
+.ol2    {list-style:square}
+.ol3    {list-style-image:url("barchart.gif")}
+BODY {
+	background-image:url("4.gif");
+	background-attachment:fixed;
+	background-position:bottom;
+	background-repeat:no-repeat;
+     }
+
+#menuBar {
+		  position: absolute; 
+		  left: 1.6%; 
+	          top: 0; 
+                  width: 100%; 
+	          height: 22px; 
+	          border: 1px solid blue; 
+	          background-color: blue;
+                  color:rgb(0,0,255);
+         }
+
+.top {	
+	position: absolute; 
+        width: 33%;
+        height: 22px; 
+        color:white;
+        background-color: blue; 
+        layer-background-color: blue; 
+	visibility: visible; 
+     }
+
+
+.hid {
+       visibility: hidden;
+     } 
+
+
+.vis1 {
+		position: absolute;  
+		left=50;
+		top=100;
+                width: 150px; 
+                border: 1px solid #f0f0ff; 
+                background-color: #f0f0ff; 
+                layer-background-color: #f0f0ff; 
+                top: 22px; 
+		visibility: visible; 
+      } 
+
+
+.vis2 {
+		position: absolute;  
+		left=170;
+		top=100;
+                width: 180px; 
+                border: 1px solid #f0f0ff; 
+                background-color: #f0f0ff; 
+                layer-background-color: #f0f0ff; 
+                top: 22px; 
+		visibility: visible; 
+      } 
+
+.vis3 {
+		position: absolute;  
+		left=220;
+		top=100;
+                width: 180px; 
+                border: 1px solid #e0e0ff; 
+                background-color: #e0e0ff;
+                layer-background-color: #e0e0ff;
+                top: 22px; 
+		visibility: visible; 
+      } 
+
+.vis4 {
+		position: absolute;  
+		left=430;
+		top=100;
+                width: 180px; 
+                border: 1px solid #f0f0ff; 
+                background-color: #f0f0ff; 
+                layer-background-color: #f0f0ff; 
+                top: 22px; 
+		visibility: visible; 
+      } 
+
+</style> 
+<!--------------------------- BODY ------------------------>
+<body bgcolor=#CCCCCC text=red>
+
+<div id="menuBar"></div>
+
+<center>
+<div id="top1" class="top" style="left:10;top:0;" onClick="drop(pop1,1)">
+     HTML
+</div>
+
+<div id="top2" class="top" style="left:170;top:0;" onClick="drop(pop2,2)">
+     JavaScript
+</div>
+
+
+
+<div id="top4" class="top" style="left:430;top:0;" onClick="drop(pop4,4)">
+     MS Js Reference
+</div>
+</center>
+<div onClick="wipe()">
+<center>
+</div>
+<br>
+<div onClick="wipe()" style="font-family:'Comic Sans MS';">
+<h2>Web Programming Course</h2>
+</div>
+<div onClick="wipe()">
+</center>
+<ol class="ol3">
+ <li>&nbsp;&nbsp;&nbsp;<a href="webprog.html">Hebrew Overview (HTML version)</a><br>
+ <li>&nbsp;&nbsp;&nbsp;<a href="webprog.doc">Hebrew Overview (MS WORD version)</a><br>
+ 
+</ol>
+
+
+<span id="pop1" class="hid"> 
+  
+   	<a href="../ex1.html">Minimal program</a><br>
+        <a href="../ex2.html">Title</a><br>
+	<a href="../ex3.html">Simple output</a><br>
+	<a href="../ex4.html">Font sizes</a><br>
+	<a href="../ex5.html">Fontstyles</a><br>
+	<a href="../ex6.html">Phrase styles</a><br>
+	<a href="../ex7.html">Special styles</a><br>
+	<a href="../ex8.html">Block output </a><br>
+	<a href="../ex9.html">Definitions list</a><br>
+	<a href="../ex10.html">Unordered list</a><br>
+	<a href="../ex11.html">Ordered list</a><br>
+	<a href="../ex12.html">Directory list</a><br>
+	<a href="../ex13.html">Menu list</a><br>
+	<a href="../ex14.html">Font attributes</a><br>
+	<a href="../ex15.html">RGB Colors</a><br>
+	<a href="../ex16.html">Comments</a><br>
+	<a href="../ex17.html">Simple Tables</a><br>
+	<a href="../ex18.html">Tables backround</a><br>
+	<a href="../ex19.html">Tables enhanced</a><br>
+	<a href="../ex20.html">Hypermedia</a><br>
+
+</span> 
+
+
+<span id="pop2" class="hid"> 
+        
+   	<a href="../js/js1.html">Minimal program</a><br>
+	<a href="../js/js2.html">Import file</a><br>
+	<a href="../js/js3.html">Functions</a><br>
+	<a href="../js/js4.html">Output</a><br>
+	<a href="../js/js5.html">Input</a><br>
+	<a href="../js/js6.html">Predefined Objects/functions</a><br>
+	<a href="../js/js7.html">Array</a><br>
+	<a href="../js/js8.html">Math</a><br>
+	<a href="../js/js9.html">Strings</a><br>
+	<a href="../js/js10.html">Objects and global variables</a><br>
+	<a href="../js/js11.html">Window </a><br>
+	<a href="../v/js12.html">Window open/close</a><br>
+	<a href="../js/v13.html">Interactive Window open/close</a><br>
+	<a href="../js/v14.html">Application 1: Calculator</a><br>
+	<a href="../js/js15.html">Application 2: Calendar</a><br>
+	<a href="../js/v16.html">Application 3: Scroll</a><br>
+	<a href="../js/v17.html">Application 4: Educational Software</a><br>
+	<a href="../js/js18.html">Application 5: Primitive DataBase</a><br>
+	<a href="../js/js19.html">Application 6: Login System</a><br>
+	<a href="../js/js20.html">Application 7: Database</a><br>
+
+</span> 
+
+
+
+
+
+<span id="pop4" class="hid"> 
+        <a href="../msjs/jstoc.htm">Table of Contents</a><br>
+</span> 
+
+
+</div>
+<!---------  -------------->
+
+
+<!-------------------  SCRIPT  -------------------->
+<script>
+//if Netscape - tell the user to switch to Microsoft Explorer
+if (document.layers) alert("To view this page Microsoft Explorer is needed!");
+//if Netscape 
+if (document.layers) {
+  visible = 'show';
+  hidden = 'hide';
+} 
+//if Microsoft Explorer
+else if (document.all) {
+  visible = 'visible';
+  hidden = 'hidden';
+}
+
+
+function drop(win,num) 
+{
+/*
+// "document.all.tags" is predefined browser object
+// "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span')
+// as every array it has the "length property
+// we need it for the "for" loop
+len=spans.length;
+// traverse all the "span" alements = all drop-menus
+for(i=0;i<len;i++)
+// if the element is "span" make it HID = close all open drop-menus
+spans[i].className='hid';
+
+   if (win.className=='vis'+num) win.className='hid'; 
+    else win.className='vis'+num;
+}
+
+
+function wipe() 
+{
+/*
+// "document.all.tags" is predefined browser object
+// "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span')
+// as every array it has the "length property
+// we need it for the "for" loop
+len=spans.length;
+// traverse all the "span" alements
+
+// if the element is "span" make it HID
+for(i=0;i<len;i++) spans[i].className='hid';
+}
+
+</script>
+
+</textarea>
+
+<FORM>
+<input type=button onClick="document.write(dhex10.value)" value="Run">
+<input type=button onClick="location='dhex10.html'" value="Next">
+<input type=button onClick="location='dhex9.html'" value="Prev">
+</form>
+</center>
+
+<br>
+<h4>To make drop-down menus various methods are available in DHTML.<br>
+We will use the visibility property in style to make the drop-down menu visible/hidden as needed.
+
+
+
+
+ <!-- End of Example 10 -->
+
+ 

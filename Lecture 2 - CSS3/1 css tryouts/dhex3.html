@@ -1,0 +1,66 @@
+<style>
+.listing {	background:white; 
+		border-style: ridge;
+		border-color:#CCCCCC;
+		font-family:"Comic Sans MS"
+         }
+</style>
+<body bgcolor=#dddddd>
+<CENTER><h1>CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 3  -->
+<font color=blue>
+<h3>3.  CSS - Creating a &lt;LINK> StyleSheet:</h3>
+<center> 
+<textarea name="dhex3" wrap=hard cols=60 rows=10>
+<html><head>
+
+<LINK rel=stylesheet href="dhex3.css" type="text/css">
+
+</head>
+<body>
+<h1>this is h1 text styled</h1>
+this is body text styled
+
+</body></html>
+</textarea>
+
+<FORM>
+<input type=button onClick="document.write(dhex3.value)" value="Run">
+<input type=button onClick="location='dhex4.html'" value="Next">
+<input type=button onClick="location='dhex2.html'" value="Prev">
+</form>
+</center>
+
+<br>
+<h3>The dhex3.css file listing:</h3>
+<pre>
+<p class=listing>
+   BODY      { background-color:#EEEEEE; 
+	       color: red                }
+
+   H1     {  font: 18pt Arial bold;
+             color:blue;                 }
+
+</pre>
+</p>
+<h4><font color=purple>
+<p>
+Styles are normally saved in external to your HTML documents files.<br>
+CSS file has a <font color=blue>.css </font> ending.<p>
+The file is included by using: <br>
+<font color=red>
+<code><xmp><LINK rel=stylesheet href="filename.css" type="text/css"></xmp></code></font>
+<br>or<font color=red>
+<code><xmp><style>@import url("filename.css");</style>
+</xmp></code></font>
+<p>
+External style sheets enable you to change <ul><li>the appearance 
+<li>the layout </ul>
+of all the pages in your Web just by editing a single CSS document. 
+ <!-- End of Example 3 -->
+
+ 

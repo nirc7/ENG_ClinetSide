@@ -1,0 +1,219 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>BGU DHTML TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 8  -->
+<font color=blue>
+<h3>8a.  CSS - Layering:</h3>
+<center> 
+<textarea name="dhex8a" wrap=hard cols=60 rows=10>
+
+<HTML><HEAD>
+<!---------------------  STYLE    ------------------------>
+
+<STYLE>
+
+.VIS {
+	COLOR: red; VISIBILITY: visible
+     }
+.HID {
+	DISPLAY: none; VISIBILITY: hidden
+      }
+</STYLE>
+<!---------------------  SCRIPT   ------------------------>
+<SCRIPT>
+//
+allv=false;
+
+/*
+//		function vis(x) implementation
+//
+// aim: show/hide section (span,div,p..) x of the doc
+// implementation: toggling the class of x
+// detail: HID class has the visibility property "hidden"
+//  	   VIS class has the visibility property "visible"
+*/
+function vis(x)
+{
+if(x.className=='HID') x.className='VIS';
+else x.className='HID';
+}
+
+
+/*
+//		function allvis() implementation
+//
+// aim: show all sections of the doc - full text
+// implementation: the class of all <- VIS
+// detail: HID class has the visibility property "hidden"
+//  	   VIS class has the visibility property "visible"
+*/
+
+function allvis()
+{
+/*
+// "document.all.tags" is predefined browser object
+// "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span');
+// as every array it has the "length" property
+// we need it for the "for" loop
+len=spans.length;  //len= number of span tags in the document
+// traverse all the "span" alements
+for(i=0;i<len;i++)
+// if the "span" element belongs to HID (not visible)
+if(spans[i].className=='HID')
+// make it visible
+ spans[i].className='VIS';
+allv=true;
+}
+
+
+/*
+//		function top() implementation
+//
+// aim: show only highest level sections of the doc
+// implementation: the class of all but the highest <- HID
+// detail: the highest have no class, not even "VIS"
+//         all having "VIS" class become "HID"
+//         all others - either already HID or are 
+//         at the highest level.
+//	   HID class has the visibility property "hidden"
+//  	   VIS class has the visibility property "visible"
+*/
+
+function top()
+{
+/*
+// "document.all.tags" is predefined browser object
+// "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span')
+// as every array it has the "length property
+// we need it for the "for" loop
+len=spans.length;
+// traverse all the "span" alements
+for(i=0;i<len;i++)
+// if the "span" element belongs to VIS (both visible and not highest)
+if(spans[i].className=='VIS') 
+// make it HID
+spans[i].className='HID';
+allv=false;
+}
+</SCRIPT>
+<!---------------------  BODY    ------------------------>
+<!--
+ ! 	ondblClick anywhere - 
+ !                toggles between: 
+ !                                All Levels
+ !                                Top Level
+-->
+</HEAD>
+<BODY bgColor=#fcfcff 
+ondblclick="if(allv==true) top(); else allvis();">
+
+<CENTER>
+<FONT color=gray size=2>
+<A href="javascript:allvis();">
+All Levels</A>
+&nbsp;&nbsp;&nbsp; to see/hide next level - click on higher 
+level!&nbsp;&nbsp;&nbsp; 
+<A href="javascript:top();">Top Level</A> 
+</FONT>
+
+<HR>
+
+</CENTER><FONT color=purple>
+
+<H2>JavaScript</H2>
+
+<H4>
+<SPAN onclick=vis(JS1)>JS </SPAN>
+<SPAN class=HID id=JS1 onclick=vis(JS11)>
+<BR><BR>JavaScript is programming language for the 
+Internet.<BR></SPAN>
+<SPAN class=HID id=JS11>
+<BR><FONT 
+color=#bb0000>JavaScript is programming language in the sense that it includes 
+all the operations and expressions of any basic programming language, like C, 
+Pascal, Basic. It is for the Internet in more than one sense. Among others: 
+<UL>
+  <LI>it is interpreted from (inside) a browser 
+  <LI>it has predefined functions very usefull for Internet documents 
+  <LI>it interacts directly with HTML 
+  <LI>it interacts directly with browser and its objects 
+  <LI>it has a built-in security very usefull for the Internet - it does not 
+  include any file operations </LI></UL></FONT>
+</SPAN>
+
+<SPAN onclick=vis(JS2)><BR>C for the WWW </SPAN>
+
+<SPAN class=HID id=JS2><BR><BR>JS could be 
+called C for the WWW, as it has special features for the HTTP server and client 
+- the browser, but also most of the features of C.<BR><BR></SPAN><BR>
+
+<SPAN onclick=vis(JS3)>C3S </SPAN>
+
+<SPAN class=HID id=JS3 onclick=vis(JS31)><BR><BR>
+JS is C3S: C SSS - C Smaller, Simpler, Smarter.
+<BR>
+</SPAN>
+
+<BR>
+
+
+<SPAN class=HID id=JS31>
+
+<SPAN onclick=vis(smaller)>
+<FONT color=#bb0000>Smaller: </FONT></SPAN>
+
+<SPAN class=HID id=smaller><FONT color=#770000>
+<UL>
+  <LI>No types - no need to declare variables or functions types 
+  <LI>No pointers 
+  <LI>No structs 
+  <LI>No C I/O including file operations 
+  <LI>No direct access to memory </LI></UL></FONT></SPAN><BR>
+<SPAN onclick=vis(simpler)><FONT color=#bb0000>Simpler: </FONT></SPAN>
+
+<SPAN class=HID id=simpler>
+<FONT color=#770000>
+<UL>
+  <LI>No MAIN function 
+  <LI>No semicolumn (;) at the end of statement 
+  <LI>A forgiving Interpreter 
+  <LI>All variables transfered by values 
+  <LI>All objects transfered by reference </LI></UL></FONT></SPAN><BR>
+<SPAN onclick=vis(smarter)><FONT color=#bb0000>Smarter: </FONT></SPAN>
+
+<SPAN class=HID id=smarter><FONT color=#770000>
+<UL>
+  <LI>Type conversion is automatic when needed 
+  <LI>OOP 
+  <LI>Predefined smart Objects and Functions 
+  <LI>Direct access to many browser Objects 
+</LI></UL></FONT></SPAN></SPAN><BR></H4></FONT></BODY></HTML>
+
+</textarea>
+
+<FORM>
+<input type=button onClick="document.write(dhex8a.value)" value="Run">
+<input type=button onClick="location='dhex9.html'" value="Next">
+<input type=button onClick="location='dhex8.html'" value="Prev">
+</form>
+</center>
+
+<br>
+<h3>
+Layering makes it possible to see various different layers without going back to the server.<br>
+This is implemented by using the visibility property of the alements.<br>
+It is possible to dynamically change the class of an element. Changing it to a class with visibility property "hidden" will hide tha element.
+
+
+
+ <!-- End of Example 8 -->
+
+ 

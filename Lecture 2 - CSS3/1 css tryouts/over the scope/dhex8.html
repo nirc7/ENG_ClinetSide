@@ -1,0 +1,54 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>BGU DHTML TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 8  -->
+<font color=blue>
+<h3>8.  CSS - Layering:</h3>
+<center> 
+<textarea name="dhex8" wrap=hard cols=60 rows=10>
+<html><HEAD>
+<STYLE>
+   .RED  {  color: red; letter-spacing: 2 }
+   .BLUE  { color: blue; letter-spacing:2; font: 20pt/24pt "Verdana,              sans-serif"; line-height=0.5}
+   .HID  { visibility: hidden;  }
+</STYLE>
+</HEAD>
+
+<BODY>
+<UL>
+  <LI onmouseover="this.className='HID'"
+      onmouseout ="this.className=''">HTML Authoring</LI>
+<li class="RED" onmouseover="this.className='BLUE'"
+      onmouseout ="this.className='RED'">no special</li>
+</UL>
+<p onmouseover="this.className='BLUE'"
+      onmouseout ="this.className=''">
+The following example implements a behavior in the form of an HTML Component (HTC), contained in a file called hilite.htc, to achieve the mouseover highlight effect. The behavior is applied to the LI with the familiar STYLE block, using the proposed CSS behavior attribute that specifies the location of the behavior. 
+</p>
+</BODY>
+
+</html>
+</textarea>
+
+<FORM>
+<input type=button onClick="document.write(dhex8.value)" value="Run">
+<input type=button onClick="location='dhex8a.html'" value="Next">
+<input type=button onClick="location='dhex7b.html'" value="Prev">
+</form>
+</center>
+
+<br>
+<h4>
+Layering makes it possible to see various different layers without going back to the server.<br>
+This is implemented by using the visibility property of the alements.<br>
+It is possible to dynamically change the class of an element. Changing it to a class with visibility property "hidden" will hide tha element.
+
+
+
+ <!-- End of Example 8 -->
+
+ 

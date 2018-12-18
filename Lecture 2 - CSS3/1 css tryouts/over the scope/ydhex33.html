@@ -1,0 +1,70 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>Yarden CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 33  -->
+<font color=blue>
+<h3>33.  CSS - positioning (2):</h3>
+<center> 
+<textarea name="ydhex33" wrap=hard cols=60 rows=10>
+<html><head>
+<style>
+          #w {  position: absolute;
+		left: 10%;top: 30%;
+                color:blue;
+		z-index: 2
+               }
+     
+          #w1 { position: absolute;
+                left: 20%;
+                top: 35%;
+                z-index: 1
+               }
+         
+	#jeff {position: absolute;
+                left: 90%;
+                top: 80%;
+		width: 10%;
+                height: 10%;
+                z-index: 3
+               }
+</style></head><body>
+<div id="w">
+   <img src="wendy.gif" width=300 height=200 align=right>
+   This is an example of positioning! </div>
+<div id="w1">
+  <img src="wendy.gif" width=300 height=200 align=right>
+  Another wendy pic!</div>
+<div id="jeff">
+  <img src="jeff.gif" width=100 height=60 align=right></div>
+<script>
+i=90; 	//y coordinate of jeff image
+j=0;	// x coordinate of wndy image
+function move()
+{
+jeff.style.left=i+'%';
+if(i>0) i--;
+ else i=90;
+if(j<100) 
+	{w.style.top=j+'%';j++;}
+setTimeout(move,100); //recursive loop, multithreading
+}
+setTimeout(move,100); //set timeout9function name, time interval)
+</script>
+<form><input type=button onclick="j=1;" value="Jump to Top">
+</form></body></html></textarea>
+<FORM>
+<input type=button onClick="document.write(ydhex33.value)" value="Run">
+<input type=button onClick="location='ydhex34.html'" value="Next">
+<input type=button onClick="location='ydhex32.html'" value="Prev">
+</form>
+</center>
+<br>
+<h4><font color=purple>
+
+ <!-- End of Example 33 -->
+
+ 

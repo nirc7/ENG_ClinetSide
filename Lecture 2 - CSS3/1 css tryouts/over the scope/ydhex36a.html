@@ -1,0 +1,238 @@
+<html><head>
+<style>
+UL   {	list-style-image:url("barchart.gif")}
+BODY {
+	background-image:url("4.gif");
+	background-attachment:fixed;
+	background-position:bottom;
+	background-repeat:no-repeat;
+     }
+
+#menuBar {  position: absolute; 
+	    left: 0; 
+	    top: 0; 
+            width: 110%; 
+	    height: 0.6cm; 
+	    background-color: blue;
+           }
+
+.top 	{	
+	position: absolute; 
+        color:white;
+        background-color: blue; 
+       	visibility: visible; 
+     }
+
+.hid {  visibility: hidden  } 
+
+.vis1 {	position: absolute;  
+	left=40;
+	top=0.6cm;
+        width: 180px; 
+        border: 1px solid #f0f0ff; 
+        background-color: #f0f0ff; 
+        layer-background-color: #f0f0ff; 
+        visibility: visible; 
+      } 
+
+.vis2 {	position: absolute;  
+	left=170;
+	top=0.6cm;
+        width: 180px; 
+        border: 1px solid #f0f0ff; 
+        background-color: #f0f0ff; 
+        layer-background-color: #f0f0ff; 
+        visibility: visible; 
+      } 
+
+.vis3 {	position: absolute;  
+	left=430;
+	top=0.6cm;
+        width: 180px; 
+        border: 1px solid #f0f0ff; 
+        background-color: #f0f0ff;
+	layer-background-color: #f0f0ff;  
+        visibility: visible; 
+      } 
+
+</style> 
+<!--------------------------- BODY ------------------------>
+<body bgcolor=#CCCCCC text=red>
+<div id="menuBar"></div>
+<div id=top1 class=top style="left:50;top:0" onClick="drop(html,1)">
+     HTML</div>
+<div id=top2 class=top style="left:230;top:0" onClick="drop(js,2)">
+     JavaScript</div>
+<div id=top3 class=top style="left:430;top:0" onClick="drop(css,3)">
+     CSS</div>
+<center>
+<div onClick="wipe()" style="font-family:'Comic Sans MS';margin-top:2cm;margin-bottom: 1cm;">
+<p><h2>Web Programming Course</h2></center></div>
+<div onClick="wipe()">
+<ul>
+ <li>  <a href="webprog.html">Hebrew Overview (HTML version)</a>
+ <li>  <a href="webprog.doc">Hebrew Overview (MS WORD version)</a>
+</ul>
+<span id=html class=hid> 
+  
+   	<a href="../ex1.html">Minimal program</a><br>
+        <a href="../ex2.html">Title</a><br>
+	<a href="../ex3.html">Simple output</a><br>
+	<a href="../ex4.html">Font sizes</a><br>
+	<a href="../ex5.html">Font styles</a><br>
+	<a href="../ex6.html">Phrase styles</a><br>
+	<a href="../ex7.html">Special styles</a><br>
+	<a href="../ex8.html">Block output </a><br>
+	<a href="../yex9.html">Block output(2) </a><br>
+	<a href="../yex10.html">Definitions list</a><br>
+	<a href="../yex11.html">Unordered list</a><br>
+	<a href="../yex12.html">Ordered list</a><br>
+	<a href="../yex13.html">Directory list</a><br>
+	<a href="../yex14.html">Menu list</a><br>
+	<a href="../yex15.html">Body attributes</a><br>
+	<a href="../yex16.html">Font attributes</a><br>
+	<a href="../yex17.html">RGB Colors</a><br>
+	<a href="../yex19.html">Comments</a><br>
+	<a href="../yex20.html">Symmetrical Tables</a><br>
+	<a href="../yex21.html">Asymmetrical Tables</a><br>
+	<a href="../yex22.html">Tables backround</a><br>
+	<a href="../yex24.html">Tables enhanced</a><br>
+	<a href="../yex25.html">Hypermedia - image</a><br>
+	<a href="../yex26.html">Hypermedia - href</a><br>
+	<a href="../yex28.html">Hypermedia- anchors</a><br>
+	<a href="../yex29.html">Sound</a><br>
+	<a href="../yex30.html">Video</a><br>
+	<a href="../yex31.html">Mailto</a><br>
+	<a href="../yex32.html">DoubleClick</a><br>
+	<a href="../yex33.html">Click</a><br>
+	<a href="../yex34.html">Mouse Over</a><br>
+	<a href="../yex35.html">onMouseMove</a><br>
+	<a href="../yex36.html">Forms- select control</a><br>
+	<a href="../yex37.html">Forms - input controls </a><br>
+	<a href="../yex38.html">Forms - checkbox</a><br>
+	<a href="../yex39.html">Forms - radio</a><br>
+	<a href="../yex40.html">Forms - file</a><br>
+	<a href="../yex41.html">Forms - button</a><br>
+	<a href="../yex42.html">DIV and SPAN</a><br>
+	<a href="../yex43.html">Frames</a><br>
+	
+</span> 
+
+
+<span id=js class=hid> 
+        
+   	<a href="../js/js1.html">Minimal program</a><br>
+	<a href="../js/js2.html">Import file</a><br>
+	<a href="../js/js3.html">Functions</a><br>
+	<a href="../js/yjs4.html">Output</a><br>
+	<a href="../js/yjs5.html">Variables</a><br>
+	<a href="../js/yjs6.html">Functions</a><br>
+	<a href="../js/yjs7.html">If</a><br>
+	<a href="../js/yjs8.html">Switch</a><br>
+	<a href="../js/yjs9.html">For</a><br>
+	<a href="../js/yjs10.html">While</a><br>
+	<a href="../js/yjs11.html">Input and Output</a><br>
+	<a href="../js/yjs13.html">Strings</a><br>
+	<a href="../js/yjs14.html">Array</a><br>
+	<a href="../js/yjs15.html">Math functions</a><br>
+	<a href="../js/yjs17.html">Objects</a><br>
+	<a href="../js/yjs18.html">Constructors</a><br>
+	<a href="../js/yjs19.html">Object methods</a><br>
+	<a href="../js/yjs21.html">Class variables</a><br>
+	<a href="../js/yjs22.html">Date</a><br>
+	<a href="../js/yjs23.html">Time</a><br>
+	<a href="../js/yjs24.html">Window</a><br>
+	<a href="../js/yjs25.html">Alert box </a><br>
+	<a href="../js/yjs26.html">Confirm box </a><br>
+	<a href="../js/yjs27.html">Prompt box </a><br>
+	<a href="../js/yjs29.html">open/close window </a><br>
+	<a href="../js/yjs30.html">Location </a><br>
+	<a href="../js/yjs31.html">Reload location </a><br>
+	<a href="../js/yjs32.html">Interactive Window </a><br>
+	<a href="../js/yjs33.html">Status bar </a><br>
+	<a href="../js/yjs34.html">Print</a><br>
+	<a href="../js/yjs35.html">History  </a><br>
+	<a href="../js/yjs36.html">Navigator </a><br>
+	<a href="../js/yjs37.html">Screen detection  </a><br>
+	<a href="../js/yjs38.html">setTimeout </a><br>
+	<a href="../js/yjs39.html">Application 1: Calendar</a><br>
+	<a href="../js/yjs40.html">Application 2: Scroll</a><br>
+	<a href="../js/yjs41.html">Application 3: Educational Software</a><br>
+	
+</span> 
+
+<span id=css class="hid"> 
+        <a href="../css/dhex1.html">Creating a StyleSheet</a><br>
+        <a href="../css/dhex2.html">Inline StyleSheet</a><br>
+	<a href="../css/dhex3.html">LINK StyleSheet</a><br>
+	<a href="../css/dhex4.html">@import StyleSheet</a><br>
+	<a href="../css/dhex5.html">Pattern Style</a><br>
+	<a href="../css/dhex5a.html">Grouping selectors</a><br>
+	<a href="../css/dhex6.html">Class Style</a><br>
+	<a href="../css/dhex6a.html">Cascading Order</a><br>
+	<a href="../css/dhex7.html">ID class Style </a><br>
+	<a href="../css/ydhex8.html">Background </a><br>
+	<a href="../css/ydhex9.html">background-image</a><br>
+	<a href="../css/ydhex10.html">image positioning </a><br>
+	<a href="../css/ydhex12.html">background-attachment </a><br>
+	<a href="../css/ydhex14.html">Text properties </a><br>
+	<a href="../css/ydhex15.html">spacing property </a><br>
+	<a href="../css/ydhex16.html">text-decoration  </a><br>
+	<a href="../css/ydhex17.html">text-indent  </a><br>
+	<a href="../css/ydhex18.html">text-transform  </a><br>
+	<a href="../css/ydhex20.html">Font property </a><br>
+	<a href="../css/ydhex21.html">One line font property </a><br>
+	<a href="../css/ydhex22.html">Border </a><br>
+	<a href="../css/ydhex24.html">Margin </a><br>
+	<a href="../css/ydhex25.html">Padding </a><br>
+	<a href="../css/ydhex26.html">List</a><br>
+	<a href="../css/ydhex27.html">Float</a><br>
+	<a href="../css/ydhex28.html">Visibility </a><br>
+	<a href="../css/ydhex29.html">Cursor </a><br>
+	<a href="../css/ydhex30.html">Overlapping </a><br>
+	<a href="../css/ydhex31.html">Positioning</a><br>
+	<a href="../css/ydhex34.html">Layering </a><br>
+	<a href="../css/ydhex35.html">Pseudo-elements </a><br>
+	<a href="../css/ydhex36.html">Drop-down menu </a><br>
+
+</span></div>
+<!-------------------  SCRIPT  -------------------->
+<script>
+//if Netscape - tell the user to switch to Microsoft Explorer
+if (document.layers) alert("To view this page Microsoft Explorer is needed!");
+//if Netscape 
+if (document.layers) {  visible = 'show';  hidden = 'hide';} 
+//if Microsoft Explorer
+else if(document.all) {  visible = 'visible';  hidden = 'hidden';}
+
+
+function drop(win,num) 
+{
+/*
+// "document.all.tags" is predefined browser object
+// "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span')
+// traverse all the "span" alements = all drop-menus
+for(i=0;i<spans.length;i++)
+// if the element is "span" make it HID = close all open drop-menus
+spans[i].className='hid';
+
+   if (win.className=='vis'+num) win.className='hid'; 
+    else win.className='vis'+num;
+}
+
+
+function wipe() 
+{
+/*
+// "document.all.tags" is predefined browser object
+// "document.all.tags('span')" creates a sub-array of all "span" elements
+*/
+spans=document.all.tags('span')
+// traverse all the "span" alements
+// if the element is "span" make it HID
+for(i=0;i<spans.length;i++) spans[i].style.visibility='hidden';
+}
+</script>
+</body></html>

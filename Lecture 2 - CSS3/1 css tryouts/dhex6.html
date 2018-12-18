@@ -1,0 +1,65 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 6  -->
+<font color=blue>
+<h3>6.  CSS - Creating a class Style:</h3>
+<center> 
+<textarea name="dhex6" wrap=hard cols=60 rows=10>
+<html><head>
+
+<style>
+   .gray-red     { background-color:#EEEEEE; 
+	       color: red                }
+
+   .big-blue     {  font: 18pt Arial bold;
+             color:blue;                 }
+   .bgtomato	{ background-color:tomato; }
+   .caps          {font-variant:small-caps}	
+</style>
+
+</head>
+<body class="gray-red">
+<h1 class=big-blue>this is h1 text styled</h1>
+this is body text styled
+<p class="big-blue bgtomato caps">this is a para belonging to three classes: big-blue and bgtomato and caps!</p>
+</body></html>
+</textarea>
+
+<FORM>
+<input type=button onClick="document.write(dhex6.value)" value="Run">
+<input type=button onClick="location='dhex6a.html'" value="Next">
+<input type=button onClick="location='dhex5.html'" value="Prev">
+</form>
+</center>
+
+<br>
+<h4><font color=purple>
+
+Class style is a rule of formatting, not attached to an HTML element or elements.
+<p>
+Each class driven style definition consists of:
+<ul>
+	<li><font color=magenta>Class name</font> - . name
+<li><font color=magenta>Rules definitions</font> - same as for patterns, i.e.: a series of rules, each of the form:
+		<center><font color=red>property:value;</font></center>
+		
+</ul>
+Each rules group for one class is delimited by curly braces. {}<br>
+Between the rules in the definition the semicolon (;) serves as delimiter.<p>
+Class name in the class declaration starts with a dot.
+<p>
+Between the classes no other delimiter is needed.
+<p>
+More than one element can be declared to belong to one or more classes.
+
+
+
+
+ <!-- End of Example 6 -->
+
+ 

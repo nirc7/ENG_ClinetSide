@@ -1,0 +1,57 @@
+
+<body bgcolor=#dddddd>
+<CENTER><h1>CSS TUTORIAL<br><sup><font size=3 color=gray>
+
+   &copy; Rina Zviel-Girshin
+
+</font></sup></h1></CENTER>
+<!--  Example 31  -->
+<font color=blue>
+<h3>31.  CSS - positioning :</h3>
+<center> 
+<textarea name="ydhex31" wrap=hard cols=65 rows=12>
+<html><head><style>
+h1
+{	position: absolute;top: 3cm;left: 5cm  }
+h2
+{	position: fixed;top: 4cm;left: 10cm  }
+
+p
+{	position: absolute;top: 200px;right: 150px  }
+</style></head>
+<body>
+<h1>A heading</h1>
+<h2>H2 heading</h2>
+<p>The <b>heading</b> is placed 3cm down from the top of the document,
+and 5cm to the right from the left side of the document.
+The <b>paragraph</b> is placed 200px down from the top of the document,
+and 150px to the left from the right side of the document.</p>
+<img class=image src="4.gif" width=100 height=1200> 
+</body></html></textarea>
+<FORM>
+<input type=button onClick="document.write(ydhex31.value)" value="Run">
+<input type=button onClick="location='ydhex32.html'" value="Next">
+<input type=button onClick="location='ydhex30.html'" value="Prev">
+</form>
+</center>
+<br>
+<h4><font color=purple>
+The position property places an element in a static, relative, absolute or fixed position.
+<ul >
+<li><font color=red>static </font>- the element is placed in a normal position (according to the normal flow). With the value of "static" we do not use the "left" and "top" properties 
+<li><font color=red> 
+relative </font>-  moves an element relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT position 
+<li><font color=red>absolute</font> -  with a value of "absolute" the element can be placed anywhere on a page. The element's position is specified with 
+<ul>
+<li>left
+<li>top
+<li>right
+<li>bottom properties
+</ul> 
+<li><font color=red> 
+fixed </font>-  moves an element relative to the view port so if we scrol down the elemnt will stay on the same place while scolling down
+</ul>
+
+ <!-- End of Example 31 -->
+
+ 
