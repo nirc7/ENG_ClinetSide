@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>pages</title>
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <!--the first page-->
+    <div data-role="page" id="firstPage">
+        <div data-role="header">
+           <h2> The Header</h2>
+        </div>
+
+         
+        <div data-role="content">
+            <p><a href="#secondPage" data-transition="fade">fade</a></p>
+            <p><a href="#secondPage" data-transition="pop">pop</a></p>
+            <p><a href="#secondPage" data-transition="flip">flip</a></p>
+            <p><a href="#secondPage" data-transition="turn">turn</a></p>
+            <p><a href="#secondPage" data-transition="flow">flow</a></p>
+            <p><a href="#secondPage" data-transition="slidefade">slidefade</a></p>
+            <p><a href="#secondPage" data-transition="slide">slide</a></p>
+            <p><a href="#secondPage" data-transition="slideup">slideup</a></p>
+            <p><a href="#secondPage" data-transition="slidedown">slidedown</a></p>
+            <p><a href="#secondPage" data-transition="none">none</a></p>
+        </div>
+        <div data-role="footer">
+            The Footer
+        </div>
+    </div>
+    
+    <!--the second page-->
+    <div data-role="page" id="secondPage">
+        <div data-role="header">
+            The Header
+        </div>
+        <div data-role="content">
+            the second page!
+            <br />
+            <a href="#firstPage">first page</a>
+        </div>
+        <div data-role="footer">
+            The Footer
+        </div>
+    </div>
+</body>
+</html>

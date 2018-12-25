@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>web storage</title>
+</head>
+<body>
+    <fieldset style="width:200px;float:left;margin:5px;">
+        <legend>web storage - local storage</legend>
+        <div>
+            <p>
+                <label>user name:</label>
+                <input type="text" id="LSname" />
+            </p>
+            <p>
+                <label>user name:</label>
+                <label id="LSlblname"></label>
+            </p>
+        </div>
+    </fieldset>
+    <fieldset style="width:200px;float:left;margin:5px;">
+        <legend>web storage - session storage</legend>
+        <div>
+            <p>
+                <label>user name:</label>
+                <input type="text" id="SesName" />
+            </p>
+            <p>
+                <label>user name:</label>
+                <label id="SesLblname"></label>
+            </p>
+        </div>
+    </fieldset>
+    <fieldset style="width:440px;clear:both;display:block;margin:5px;">    
+            <p style="text-align:center;">
+                <input type="button" id="Button2" value="submit" onclick="StoreName()" style="width:400px;"/>
+            </p>
+    </fieldset>
+    <fieldset style="width:440px;clear:both;display:block;margin:5px;">    
+            <p style="text-align:center;">
+                <a href="webStorage2.html" >webStorage2.html</a>
+            </p>
+    </fieldset>
+    <script type="text/javascript">
+        window.onload = start();
+        function start() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.LSname) {
+                    document.getElementById("LSlblname").innerText = localStorage.LSname;
+                }
+                else {
+                    document.getElementById("LSlblname").innerText = "no name";
+                }
+                if (sessionStorage.Sesname) {
+                    document.getElementById("SesLblname").innerText = sessionStorage.Sesname;
+                }
+                else {
+                    document.getElementById("SesLblname").innerText = "no name";
+                }
+            }
+            else {
+                alert("web storage not supported!");
+            }
+        }
+
+        function StoreName() {
+            if (typeof (Storage) !== "undefined") {
+                localStorage.LSname = document.getElementById("LSname").value;
+                document.getElementById("LSlblname").innerText = localStorage.LSname;
+                //the same as above
+                //localStorage.setItem("LSname", document.getElementById("LSname").value);
+                //document.getElementById("LSlblname").innerText = localStorage.getItem("LSname");
+                sessionStorage.Sesname = document.getElementById("SesName").value;
+                document.getElementById("SesLblname").innerText = sessionStorage.Sesname;
+                //sessionStorage.setItem("Sesname", document.getElementById("SesName").value);
+                //document.getElementById("SesLblname").innerText = sessionStorage.getItem("Sesname");
+            }
+        }
+    </script>
+</body>
+</html>

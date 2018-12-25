@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+
+    <!--opt1-->
+    <link href="Styles/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="themes/nir.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+    <script src="Libs/jquery-3.3.1.min.js"></script>
+    <script src="Libs/jquery-migrate-3.0.0.min.js"></script>
+    <script src="Libs/jquery.mobile-1.4.5.min.js"></script>
+
+    <!--opt2-->
+    <!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
+    <title></title>
+
+    <script>
+        $(document).on("pagecreate", "#firstpage", function (event) {
+            wireEventsFirstpage();
+        });
+
+        $(document).on(" pagecreate", "#secondpage", function (event) {
+            wireEventsSecondpage();
+        });
+
+
+        function wireEventsFirstpage() {
+            $('#btnPush').tap(function () {
+                alert('clicked!');
+            });
+
+            $('#firstpage').on('swiperight', function () {
+                alert('you have swipped  the screen to the right!');
+            });
+
+        }
+
+        function wireEventsSecondpage() {
+
+        }
+
+    </script>
+</head>
+<body>
+    <!--________________________________________________ page1 ___________________________________-->
+    <div id="firstpage" data-role="page">
+        <div data-role="header">
+            <h2>Ruppin App</h2>
+            
+        </div>
+        <div data-role="content">
+            <center>
+                conte3nt<br />
+                line2<br />
+                line3
+                <button id="btnPush">push</button>
+                <h4>PAGE1</h4>
+
+                <fieldset data-role="fieldcontain">
+                    <label for="sel">please chose:</label>
+                    <select id="sel" name="sel" data-role="slider">
+                        <option>OFF</option>
+                        <option>ON</option>
+                    </select>
+                </fieldset>
+
+                <a href="#secondPage" data-transition="turn">page2</a>
+            </center>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h3>Footer</h3>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#firstpage" class="ui-state-persist">firstPage</a></li>
+                    <li><a href="#secondPage" data-transition="flip">secondPage</a></li>
+                    <li><a href="#thirdPage">third</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--________________________________________________ page2 ___________________________________-->
+    <div id="secondPage" data-role="page">
+        <div data-role="header">
+            <h2>Ruppin App</h2>
+        </div>
+        <div data-role="content">
+            <p>PAGE2</p> 
+            <a href="#firstpage" data-transition="slidedown">page1</a>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h2>FOOTER</h2>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#firstpage" >firstPage</a></li>
+                    <li><a href="#secondPage" data-transition="flip" class="ui-state-persist">secondPage</a></li>
+                    <li><a href="#thirdPage">third</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

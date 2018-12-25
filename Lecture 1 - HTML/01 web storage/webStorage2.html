@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>webStorage2</title>
+</head>
+<body>
+    <div id="name"></div>
+    <a href="webStorage.html">back</a>
+
+    <script type="text/javascript">
+        window.onload = start();
+        function start() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.LSname) {
+                    document.getElementById("name").innerText = "Hello " + localStorage.LSname;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

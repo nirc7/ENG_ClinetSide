@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>web storage</title>
+</head>
+<body>
+    <fieldset style="width:200px;float:left;margin:5px;">
+        <legend>web storage - local storage</legend>
+        <div>
+            <p>
+                <label>user name:</label>
+                <input type="text" id="LSname" />
+            </p>
+            <p>
+                <label>user name:</label>
+                <label id="LSlblname"></label>
+            </p>
+        </div>
+    </fieldset>
+    
+    <fieldset style="width:200px;clear:both;display:block;margin:5px;">    
+            <p style="text-align:center;">
+                <input type="button" id="Button2" value="submit" onclick="StoreName()" style="width:180px;"/>
+            </p>
+    </fieldset>
+    
+    <script type="text/javascript">
+        window.onload = start();
+        function start() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.LSnameObject) {
+                    document.getElementById("LSlblname").innerText = JSON.parse(localStorage.LSnameObject).name + ", " +
+                        JSON.parse(localStorage.LSnameObject).theDate;
+                }
+                else {
+                    document.getElementById("LSlblname").innerText = "no name";
+                }
+            }
+            else {
+                alert("web storage not supported!");
+            }
+        }
+
+        function StoreName() {
+            if (typeof (Storage) !== "undefined") {
+                //var name = document.getElementById("LSname").value;
+                //var theDate = new date();
+                var myPerson = {
+                    name: document.getElementById("LSname").value,
+                    theDate: new Date()
+                };
+                alert(myPerson.name);
+                alert(JSON.stringify(myPerson));
+                localStorage.LSnameObject = JSON.stringify(myPerson);
+                if (JSON.parse(localStorage.LSnameObject) != null) {
+                    document.getElementById("LSlblname").innerText = JSON.parse(localStorage.LSnameObject).name + ", " +
+                        JSON.parse(localStorage.LSnameObject).theDate;
+                }
+                else {
+                    document.getElementById("LSlblname").innerText = "error";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
